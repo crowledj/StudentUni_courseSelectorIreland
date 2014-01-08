@@ -11,6 +11,9 @@
 #import "BIDContentViewController.h"
 #import "BIDContentDetailViewController.h"
 
+
+//stupid little test change :)
+
 static NSString *CellIdentifier = @"Cell";
 
 @implementation BIDContentViewController
