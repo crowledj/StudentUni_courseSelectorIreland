@@ -114,14 +114,15 @@ struct cao_entry entryA;
     points8_2010.font = [UIFont boldSystemFontOfSize:14];
     
     
-    [self openDB];
+    //[self openDB];
     
     
-    [self fillCAO_Entries];
+    //[self fillCAO_Entries];
     
     
-    [self createTableOneNamed : @"CAOLevel9DataDebug3" withField1: @"courseID" withField2: @"courseName" withField3: @"abbrev. courseName" withField4: @"college" withField5: @"2010" withField6: @"2011" withField7: @"2012"];
+    //[self createTableOneNamed : @"CAOLevel9DataDebug3" withField1: @"courseID" withField2: @"courseName" withField3: @"abbrev. courseName" withField4: @"college" withField5: @"2010" withField6: @"2011" withField7: @"2012"];
     
+    /*
     
     NSString *courseName;
     NSString *courseID;
@@ -158,6 +159,7 @@ struct cao_entry entryA;
                                   andField7:@"2012"               field7Value:lastThreeYrPoints];
             
         }
+     */
     
 }
 

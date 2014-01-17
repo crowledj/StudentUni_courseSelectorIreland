@@ -376,9 +376,11 @@ struct cao_entry entryA;
     
     [self openDB];
     
+    /*
     [self fillCAO_Entries];
     
-    [self createTableOneNamed : @"CAO_collegeLevelGenData_7add_fieldsStrings" withField1: @"courseID" withField2: @"courseName" withField3: @"abbrev. courseName" withField4: @"college" withField5: @"2010" withField6: @"2011" withField7: @"2012" withField8: @"NotAllonPtsOffered" withField9: @"MusictestInterview" withField10: @"Interview" withField11: @"testInterviewPortfolio" withField12: @"AQA" withField13: @"VacantPlaces" withField14: @"Matriculate"];
+    [self createTableOneNamed : @"CAO_collegeLevelGenData_7addfields" withField1: @"courseID" withField2: @"courseName" withField3: @"abbrev. courseName" withField4: @"college" withField5: @"2010" withField6: @"2011" withField7: @"2012" withField8: @"NotAllonPtsOffered" withField9: @"MusictestInterview" withField10: @"Interview" withField11: @"testInterviewPortfolio" withField12: @"AQA" withField13: @"VacantPlaces" withField14: @"Matriculate"];
+    
     
     NSString *courseName;
     NSString *courseID;
@@ -421,7 +423,7 @@ struct cao_entry entryA;
         
         
         
-        [self insertRecordIntoTableNamed: @"CAO_collegeLevelGenData_7add_fieldsStrings"
+        [self insertRecordIntoTableNamed: @"CAO_collegeLevelGenData_7addfields"
                               withField1:@"courseID"                field1Value:courseID
                                andField2:@"courseName"              field2Value:courseName
                                andField3:@"abbrev. courseName"      field3Value:abbrevcourseName
@@ -439,6 +441,7 @@ struct cao_entry entryA;
          
          ];
     }
+    */
     
     
     //NSLog(@"past ,main for loop in viewDidLoad");
@@ -449,7 +452,7 @@ struct cao_entry entryA;
 {
     
     NSString *collegeSelection=self.title;
-    NSString *mainTable=@"CAO_collegeLevelGenData_7add_fieldsStrings";
+    NSString *mainTable=@"CAO_collegeLevelGenData_7addfields";
     
     NSString *unique_code=nil;
     
@@ -1909,16 +1912,16 @@ struct cao_entry entryA;
     NSString *Project_portfolio=nil;
     
     
-    full_course_name   =[self getAllRowsFromTableNamed : @"CAO_collegeLevelGenData_7add_fieldsStrings" sortBy : name];
+    full_course_name   =[self getAllRowsFromTableNamed : @"CAO_collegeLevelGenData_7addfields" sortBy : name];
     //portfolio_exist    =[self getFirstExtraInfoFromTableNamed : @"CAO_collegeLevelGenData_7Add_Entries" sortBy : name];
-    quota_reached_exist=[self getFirstExtraInfoFromTableNamed : @"CAO_collegeLevelGenData_7add_fieldsStrings" sortBy : name];
+    quota_reached_exist=[self getFirstExtraInfoFromTableNamed : @"CAO_collegeLevelGenData_7addfields" sortBy : name];
     
-    music_test_interview=[self getSecondExtraInfoFromTableNamed : @"CAO_collegeLevelGenData_7add_fieldsStrings" sortBy : name];
-    Interview=[self getThirdExtraInfoFromTableNamed : @"CAO_collegeLevelGenData_7add_fieldsStrings" sortBy : name];
-    testInterviewPortfolio=[self getFourthExtraInfoFromTableNamed : @"CAO_collegeLevelGenData_7add_fieldsStrings" sortBy : name];
-    AQA=[self getFifthExtraInfoFromTableNamed : @"CAO_collegeLevelGenData_7add_fieldsStrings" sortBy : name];
-    VacantPlaces=[self getSixthExtraInfoFromTableNamed : @"CAO_collegeLevelGenData_7add_fieldsStrings" sortBy : name];
-    Project_portfolio=[self getSeventhExtraInfoFromTableNamed : @"CAO_collegeLevelGenData_7add_fieldsStrings" sortBy : name];
+    music_test_interview=[self getSecondExtraInfoFromTableNamed : @"CAO_collegeLevelGenData_7addfields" sortBy : name];
+    Interview=[self getThirdExtraInfoFromTableNamed : @"CAO_collegeLevelGenData_7addfields" sortBy : name];
+    testInterviewPortfolio=[self getFourthExtraInfoFromTableNamed : @"CAO_collegeLevelGenData_7addfields" sortBy : name];
+    AQA=[self getFifthExtraInfoFromTableNamed : @"CAO_collegeLevelGenData_7addfields" sortBy : name];
+    VacantPlaces=[self getSixthExtraInfoFromTableNamed : @"CAO_collegeLevelGenData_7addfields" sortBy : name];
+    Project_portfolio=[self getSeventhExtraInfoFromTableNamed : @"CAO_collegeLevelGenData_7addfields" sortBy : name];
     
     NSLog(@" past calling added info function s -- creating string to write to pop up ...");
     
@@ -2086,7 +2089,7 @@ struct cao_entry entryA;
     NSString *documentsDir = [paths lastObject];
     
     
-    return[documentsDir stringByAppendingPathComponent:@"cao_db_cpugenerated_data_add7_fieldsStrings.sql"];
+    return[documentsDir stringByAppendingPathComponent:@"cao_db_cpugenerated_data_add7fields.sql"];
 }
 
 

@@ -13,6 +13,7 @@
 #import "BIDCollegeLevelViewController.h"
 #import "BIDCollegeLevel67ViewController.h"
 
+
 static NSString *CellIdentifier = @"Cell";
 
 
@@ -48,8 +49,6 @@ static NSString *CellIdentifier = @"Cell";
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"CAO_medium_info.gif"]];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CellIdentifier];
-    
-    
 }
 
 
@@ -97,9 +96,9 @@ static NSString *CellIdentifier = @"Cell";
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Return NO if you do not want the specified item to be editable.
+    //Return NO if you do not want the specified item to be editable.
     return YES;
-}
+
 */
 
 /*

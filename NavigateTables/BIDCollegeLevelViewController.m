@@ -71,32 +71,27 @@ static NSString *CellIdentifier = @"Cell";
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    /* trying to put course name in info button.*/
-    //NSString *name = self.courses[indexPath];
-    
-    
-    NSString *name = @"Hey do you see the disclosure button?";
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:name
-                                                    message: @"Touch to drill down instead."
-                                                   delegate:nil cancelButtonTitle:@"Won't happen again"
-                                          otherButtonTitles:nil];
-    [alert show];
+    /* test */
+     
+     self.detailController.title = @"Disclosure Button Pressed";
+     NSString *selectedCollege = self.colleges[indexPath.row];
+     self.detailController.title = selectedCollege;
+     [self.navigationController pushViewController:self.detailController animated:YES];
+     
+     /* end - test */
     
 }
 
 
 -(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
-    self.detailController.title = @"Disclosure Button Pressed";
-    NSString *selectedCollege = self.colleges[indexPath.row];
-    //NSString *detailMessage = [[NSString alloc] initWithFormat:@"This is details for %@.",selectedCourse];
-    /*test*/
-    //NSString *detailUpperLeft = @"Course:";
     
-    // self.detailController.message = detailMessage;
-    // self.detailController.courseList = detailUpperLeft;
-    self.detailController.title = selectedCollege;
-    [self.navigationController pushViewController:self.detailController animated:YES];
+    NSString *name = @"Some useless information here !";
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:name
+                                                    message: @"Touch to drill down instead."
+                                                   delegate:nil cancelButtonTitle:@"Won't happen again"
+                                          otherButtonTitles:nil];
+    [alert show];
     
 }
 

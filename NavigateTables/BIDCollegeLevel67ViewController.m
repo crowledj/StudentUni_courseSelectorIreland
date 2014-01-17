@@ -31,7 +31,6 @@ static NSString *CellIdentifier = @"Cell";
         
         self.colleges = @[@"UCC",@"TCD",@"UCD",@"NUIG",@"DIT",@"CIT",@"DCU",@"DBS",@"GMT"];
         
-        
         /*reverse next two lines to retrieve original*/
         
         self.detailController = [[BIDCollegeLevel67DetailViewController alloc] initWithNibName:@"CollegeLevel67DetailView" bundle:nil];
