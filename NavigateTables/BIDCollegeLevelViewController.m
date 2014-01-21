@@ -85,11 +85,42 @@ static NSString *CellIdentifier = @"Cell";
 
 -(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
+    NSString *name=nil;
     
-    NSString *name = @"Some useless information here !";
+    if([self.detailController.title isEqualToString:@"UCC"])
+        name = @"University College Cork";
+        
+    else if([self.detailController.title isEqualToString:@"TCD"])
+        name = @"Trinity College Dublin";
+    
+    else if([self.detailController.title isEqualToString:@"UCD"])
+        name = @"University College Dublin";
+    
+    else if([self.detailController.title isEqualToString:@"NUIG"])
+        name = @"National University of Ireland Galway";
+    
+    else if([self.detailController.title isEqualToString:@"DIT"])
+        name = @"Dublin Institute of Technolgy";
+    
+    else if([self.detailController.title isEqualToString:@"CIT"])
+        name = @"Cork Institute of technology";
+    
+    else if([self.detailController.title isEqualToString:@"DCU"])
+        name = @"Dunlin City University";
+  
+    else if([self.detailController.title isEqualToString:@"DBS"])
+        name = @"Dublin Business School";
+    
+    else if([self.detailController.title isEqualToString:@"GMT"])
+        name = @"GMT?";
+    
+    else
+        name = @"Institution not found ?";
+    
+    
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:name
-                                                    message: @"Touch to drill down instead."
-                                                   delegate:nil cancelButtonTitle:@"Won't happen again"
+                                                    message: @"Extra info bit ;)"
+                                                   delegate:nil cancelButtonTitle:@"OK , good to know !"
                                           otherButtonTitles:nil];
     [alert show];
     

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2358303A171FB2B400647CB6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 23583039171FB2B400647CB6 /* libsqlite3.dylib */; };
 		2366F65A175C727500E17B04 /* BIDCollegeLevelDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2366F659175C727500E17B04 /* BIDCollegeLevelDetailViewController.m */; };
-		237EA2BB18860DAD00E94CB3 /* cao_db_cpugenerated_data_add7fields.sql in Resources */ = {isa = PBXBuildFile; fileRef = 237EA2BA18860DAD00E94CB3 /* cao_db_cpugenerated_data_add7fields.sql */; };
 		23C09E51171B68EF00EADB40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C09E50171B68EF00EADB40 /* UIKit.framework */; };
 		23C09E53171B68EF00EADB40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C09E52171B68EF00EADB40 /* Foundation.framework */; };
 		23C09E55171B68EF00EADB40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C09E54171B68EF00EADB40 /* CoreGraphics.framework */; };
@@ -35,7 +34,6 @@
 		23583039171FB2B400647CB6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		2366F658175C727500E17B04 /* BIDCollegeLevelDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDCollegeLevelDetailViewController.h; sourceTree = "<group>"; };
 		2366F659175C727500E17B04 /* BIDCollegeLevelDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDCollegeLevelDetailViewController.m; sourceTree = "<group>"; };
-		237EA2BA18860DAD00E94CB3 /* cao_db_cpugenerated_data_add7fields.sql */ = {isa = PBXFileReference; lastKnownFileType = file; name = cao_db_cpugenerated_data_add7fields.sql; path = ../../../../../../CAO_App/cao_db_cpugenerated_data_add7fields.sql; sourceTree = "<group>"; };
 		23C09E4D171B68EF00EADB40 /* NavigateTables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigateTables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C09E50171B68EF00EADB40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		23C09E52171B68EF00EADB40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -142,7 +140,6 @@
 		23C09E57171B68EF00EADB40 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				237EA2BA18860DAD00E94CB3 /* cao_db_cpugenerated_data_add7fields.sql */,
 				23C09E58171B68EF00EADB40 /* NavigateTables-Info.plist */,
 				23C09E59171B68EF00EADB40 /* InfoPlist.strings */,
 				23C09E5C171B68EF00EADB40 /* main.m */,
@@ -209,7 +206,6 @@
 			files = (
 				23C09E5B171B68EF00EADB40 /* InfoPlist.strings in Resources */,
 				23C09E63171B68EF00EADB40 /* Default.png in Resources */,
-				237EA2BB18860DAD00E94CB3 /* cao_db_cpugenerated_data_add7fields.sql in Resources */,
 				23C09E65171B68EF00EADB40 /* Default@2x.png in Resources */,
 				23C09E67171B68EF00EADB40 /* Default-568h@2x.png in Resources */,
 				23C09E7E171BE62200EADB40 /* ContentDetailView.xib in Resources */,
