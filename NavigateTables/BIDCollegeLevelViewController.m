@@ -23,7 +23,7 @@ static NSString *CellIdentifier = @"Cell";
         NSAttributedString *text = @"Hello";
         //[text setColor:[UIColor grayColor]];
         
-        self.colleges = @[@"UCC",@"TCD",@"UCD",@"NUIG",@"DIT",@"CIT",@"DCU",@"DBS",@"GMT"];
+        self.colleges = @[@"UNIVERSITY COLLEGE CORK",@"TCD",@"UCD",@"NUIG",@"DIT",@"CIT",@"DCU",@"DBS",@"GMT"];
         
         
         /*reverse next two lines to retrieve original*/
