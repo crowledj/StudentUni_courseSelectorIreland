@@ -23,7 +23,9 @@ static NSString *CellIdentifier = @"Cell";
         NSAttributedString *text = @"Hello";
         //[text setColor:[UIColor grayColor]];
         
-        self.colleges = @[@"UNIVERSITY COLLEGE CORK",@"TCD",@"UCD",@"NUIG",@"DIT",@"CIT",@"DCU",@"DBS",@"GMT"];
+        self.colleges = @[@"Athlone IT",@"Carlow College",@"IT Carlow ",@"Cork IT",@"Royal College of Surgeons",@"University College Dublin",@"Dundalk IT",
+                          
+                          @"University College Cork",@"All Hallows",@"American College",@"Church of Ireland",@"Marino Institute of technology",@"Dublin Business School",@"IT Blanchardstown",@"Galway - Mayo IT",@"NUI - GALWAY",@"ST PATRICKS THURLES",@"DUBLIN CITY UNIVERSITY",@"GRIFFITH COLLEGE DUBLIN CORK AND LIMERICK",@"INSTITUTE OF BUSINESS AND TECHNOLOGY  SWORDS",@"MATER DEI",@"NATIONAL COLLEGE OF ART AND DESIGN",@"UNIVERSITY OF LIMERICK",@"LIMERICK IT",@"DUBLIN INSTITUE OF TECHNOLOGY",@"DUN LAOIGHRE IADT",@"INDEPENDENT COLLEGES DUBLIN",@"ICD BUSINESS SCHOOL",@"NATIONAL COLLEGE OF IRELAND",@"LETTERKENNY IT",@"MARY IMMACULATE LIMERICK",@"NATIONAL COUNSELLING AND PSYCHOTHERAPY INSTITUTE",@"ST PATRICKS (PONTIFICAL)-MAYNOOTH",@"NUI - MAYNOOTH",@"SHANNON COLLEGE OF HOTEL MGT",@"IT TALLAGHT",@"ST PATRICKS DRUMCONDRA",@"TRINTY COLLEGE DUBLIN",@"ST ANGELAS SLIGO",@"IT SLIGO",@"IT TRALEE",@"WATERFORD INSTITUTE OF TECHNOLOGY"];
         
         
         /*reverse next two lines to retrieve original*/
