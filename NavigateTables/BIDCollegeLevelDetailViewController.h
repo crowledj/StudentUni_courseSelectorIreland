@@ -37,15 +37,8 @@
     IBOutlet UILabel *year_3;
     
     //working line.
-    //IBOutlet UIButton *button;
-    
-    //IBOutlet UILabel  *course_1;
-    //IBOutlet UIButton  *course_1;
-    IBOutlet UIButton  *course_2;
-    IBOutlet UIButton  *course_3;
-    IBOutlet UIButton  *course_4;
-    IBOutlet UIButton  *course_5;
-    IBOutlet UIButton  *course_6;
+    IBOutlet UIButton  *course_2;IBOutlet UIButton  *course_3;IBOutlet UIButton  *course_4;
+    IBOutlet UIButton  *course_5;IBOutlet UIButton  *course_6;
     IBOutlet UIButton  *course_7;
     IBOutlet UIButton  *course_8;
     IBOutlet UIButton  *course_9;
@@ -100,10 +93,40 @@
     IBOutlet UIButton  *course_58;
     IBOutlet UIButton  *course_59;
     IBOutlet UIButton  *course_60;
+    IBOutlet UIButton  *course_61;
+    IBOutlet UIButton  *course_62;
+    IBOutlet UIButton  *course_63;
+    IBOutlet UIButton  *course_64;
+    IBOutlet UIButton  *course_65;
+    IBOutlet UIButton  *course_66;
+    IBOutlet UIButton  *course_67;
+    IBOutlet UIButton  *course_68;
+    IBOutlet UIButton  *course_69;
+    IBOutlet UIButton  *course_70;
+    IBOutlet UIButton  *course_71;
+    IBOutlet UIButton  *course_72;
+    IBOutlet UIButton  *course_73;
+    IBOutlet UIButton  *course_74;
+    IBOutlet UIButton  *course_75;
+    IBOutlet UIButton  *course_76;
+    IBOutlet UIButton  *course_77;
+    IBOutlet UIButton  *course_78;
+    IBOutlet UIButton  *course_79;
+    IBOutlet UIButton  *course_80;
+    IBOutlet UIButton  *course_81;
+    IBOutlet UIButton  *course_82;
+    IBOutlet UIButton  *course_83;
+    IBOutlet UIButton  *course_84;
+    IBOutlet UIButton  *course_85;
+    IBOutlet UIButton  *course_86;
+    IBOutlet UIButton  *course_87;
+    IBOutlet UIButton  *course_88;
+    IBOutlet UIButton  *course_89;
+    IBOutlet UIButton  *course_90;
+    IBOutlet UIButton  *course_91;
+
     
-    
-    
-    //IBOutlet UILabel *points1_2012;
+
     IBOutlet UILabel *points2_2012;
     IBOutlet UILabel *points3_2012;
     IBOutlet UILabel *points4_2012;
@@ -165,7 +188,35 @@
     IBOutlet UILabel *points60_2012;
     IBOutlet UILabel *points61_2012;
     IBOutlet UILabel *points62_2012;
-    
+    IBOutlet UILabel *points63_2012;
+    IBOutlet UILabel *points64_2012;
+    IBOutlet UILabel *points65_2012;
+    IBOutlet UILabel *points66_2012;
+    IBOutlet UILabel *points67_2012;
+    IBOutlet UILabel *points68_2012;
+    IBOutlet UILabel *points69_2012;
+    IBOutlet UILabel *points70_2012;
+    IBOutlet UILabel *points71_2012;
+    IBOutlet UILabel *points72_2012;
+    IBOutlet UILabel *points73_2012;
+    IBOutlet UILabel *points74_2012;
+    IBOutlet UILabel *points75_2012;
+    IBOutlet UILabel *points76_2012;
+    IBOutlet UILabel *points77_2012;
+    IBOutlet UILabel *points78_2012;
+    IBOutlet UILabel *points79_2012;
+    IBOutlet UILabel *points80_2012;
+    IBOutlet UILabel *points81_2012;
+    IBOutlet UILabel *points82_2012;
+    IBOutlet UILabel *points83_2012;
+    IBOutlet UILabel *points84_2012;
+    IBOutlet UILabel *points85_2012;
+    IBOutlet UILabel *points86_2012;
+    IBOutlet UILabel *points87_2012;
+    IBOutlet UILabel *points88_2012;
+    IBOutlet UILabel *points89_2012;
+    IBOutlet UILabel *points90_2012;
+    IBOutlet UILabel *points91_2012;
     
     
     IBOutlet UILabel *points1_2011;
@@ -228,11 +279,40 @@
     IBOutlet UILabel *points58_2011;
     IBOutlet UILabel *points59_2011;
     IBOutlet UILabel *points60_2011;
-
+    IBOutlet UILabel *points61_2011;
+    IBOutlet UILabel *points62_2011;
+    IBOutlet UILabel *points63_2011;
+    IBOutlet UILabel *points64_2011;
+    IBOutlet UILabel *points65_2011;
+    IBOutlet UILabel *points66_2011;
+    IBOutlet UILabel *points67_2011;
+    IBOutlet UILabel *points68_2011;
+    IBOutlet UILabel *points69_2011;
+    IBOutlet UILabel *points70_2011;
+    IBOutlet UILabel *points71_2011;
+    IBOutlet UILabel *points72_2011;
+    IBOutlet UILabel *points73_2011;
+    IBOutlet UILabel *points74_2011;
+    IBOutlet UILabel *points75_2011;
+    IBOutlet UILabel *points76_2011;
+    IBOutlet UILabel *points77_2011;
+    IBOutlet UILabel *points78_2011;
+    IBOutlet UILabel *points79_2011;
+    IBOutlet UILabel *points80_2011;
+    IBOutlet UILabel *points81_2011;
+    IBOutlet UILabel *points82_2011;
+    IBOutlet UILabel *points83_2011;
+    IBOutlet UILabel *points84_2011;
+    IBOutlet UILabel *points85_2011;
+    IBOutlet UILabel *points86_2011;
+    IBOutlet UILabel *points87_2011;
+    IBOutlet UILabel *points88_2011;
+    IBOutlet UILabel *points89_2011;
+    IBOutlet UILabel *points90_2011;
+    IBOutlet UILabel *points91_2011;
     
     
     
-    //IBOutlet UILabel *points1_2010;
     IBOutlet UILabel *points2_2010;
     IBOutlet UILabel *points3_2010;
     IBOutlet UILabel *points4_2010;
@@ -292,6 +372,37 @@
     IBOutlet UILabel *points58_2010;
     IBOutlet UILabel *points59_2010;
     IBOutlet UILabel *points60_2010;
+    IBOutlet UILabel *points61_2010;
+    IBOutlet UILabel *points62_2010;
+    IBOutlet UILabel *points63_2010;
+    IBOutlet UILabel *points64_2010;
+    IBOutlet UILabel *points65_2010;
+    IBOutlet UILabel *points66_2010;
+    IBOutlet UILabel *points67_2010;
+    IBOutlet UILabel *points68_2010;
+    IBOutlet UILabel *points69_2010;
+    IBOutlet UILabel *points70_2010;
+    IBOutlet UILabel *points71_2010;
+    IBOutlet UILabel *points72_2010;
+    IBOutlet UILabel *points73_2010;
+    IBOutlet UILabel *points74_2010;
+    IBOutlet UILabel *points75_2010;
+    IBOutlet UILabel *points76_2010;
+    IBOutlet UILabel *points77_2010;
+    IBOutlet UILabel *points78_2010;
+    IBOutlet UILabel *points79_2010;
+    IBOutlet UILabel *points80_2010;
+    IBOutlet UILabel *points81_2010;
+    IBOutlet UILabel *points82_2010;
+    IBOutlet UILabel *points83_2010;
+    IBOutlet UILabel *points84_2010;
+    IBOutlet UILabel *points85_2010;
+    IBOutlet UILabel *points86_2010;
+    IBOutlet UILabel *points87_2010;
+    IBOutlet UILabel *points88_2010;
+    IBOutlet UILabel *points89_2010;
+    IBOutlet UILabel *points90_2010;
+    IBOutlet UILabel *points91_2010;
     
 }
 
