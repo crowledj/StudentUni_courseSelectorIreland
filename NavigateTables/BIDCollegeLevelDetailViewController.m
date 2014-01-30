@@ -89,7 +89,7 @@ struct cao_entry entryA;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [scroller setContentSize:CGSizeMake(320, 2539)];
+    [scroller setContentSize:CGSizeMake(320, 3539)];
     
     
     heading.font= [UIFont boldSystemFontOfSize:16];
@@ -467,68 +467,6 @@ struct cao_entry entryA;
     
     [self openDB];
     
-    [self fillCAO_Entries];
-    
-    [self createTableOneNamed : @"CAO_collegeLevelGenData_oldData" withField1: @"courseID" withField2: @"courseName" withField3: @"abbrev. courseName" withField4: @"college" withField5: @"2010" withField6: @"2011" withField7: @"2012" withField8: @"NotAllonPtsOffered" withField9: @"MusictestInterview" withField10: @"Interview" withField11: @"testInterviewPortfolio" withField12: @"AQA" withField13: @"VacantPlaces"];
-    
-    
-    NSString *courseName;
-    NSString *courseID;
-    NSString *abbrevcourseName;
-    NSString *collegeName;
-    NSString *lastYrPoints;
-    NSString *lastTwoYrPoints;
-    NSString *lastThreeYrPoints;
-    NSString *NotAllonPtsOffered;
-    NSString *MusictestInterview;
-    NSString *Interview;
-    NSString *testInterviewPortfolio;
-    NSString *AQA;
-    NSString *VacantPlaces;
-    NSString *Matriculate;
-    
-    
-    for(int i=0;i < TABLE_FIELD_NUM*TABLE_ROW_NUM ;i+=TABLE_FIELD_NUM)
-    {
-        
-        if([entryA.course objectAtIndex:i] == nil)
-            break;
-        
-        NSLog(@" [entryA.course objectAtIndex:i] =  %@",[entryA.course objectAtIndex:i]);
-        NSLog(@" [entryA.college objectAtIndex:i+3] =  %@",[entryA.course objectAtIndex:i+3]);
-        
-        courseID               =  [entryA.course objectAtIndex:i];
-        courseName             =  [entryA.course objectAtIndex:i+1];
-        abbrevcourseName       =  [entryA.course objectAtIndex:i+2];
-        collegeName            =  [entryA.course objectAtIndex:i+3];
-        lastYrPoints           =  [entryA.course objectAtIndex:i+4];
-        lastTwoYrPoints        =  [entryA.course objectAtIndex:i+5];
-        lastThreeYrPoints      =  [entryA.course objectAtIndex:i+6];
-        NotAllonPtsOffered     =  [entryA.course objectAtIndex:i+7];
-        MusictestInterview     =  [entryA.course objectAtIndex:i+8];
-        Interview              =  [entryA.course objectAtIndex:i+9];
-        testInterviewPortfolio =  [entryA.course objectAtIndex:i+10];
-        AQA                    =  [entryA.course objectAtIndex:i+11];
-        VacantPlaces           =  [entryA.course objectAtIndex:i+12];
-        
-        
-        [self insertRecordIntoTableNamed: @"CAO_collegeLevelGenData_oldData"
-                              withField1:@"courseID"                field1Value:courseID
-                               andField2:@"courseName"              field2Value:courseName
-                               andField3:@"abbrev. courseName"      field3Value:abbrevcourseName
-                               andField4:@"college"                 field4Value:collegeName
-                               andField5:@"2010"                    field5Value:lastYrPoints
-                               andField6:@"2011"                    field6Value:lastTwoYrPoints
-                               andField7:@"2012"                    field7Value:lastThreeYrPoints
-                               andField8:@"NotAllonPtsOffered"      field8Value:NotAllonPtsOffered
-                               andField9:@"MusictestInterview"      field9Value:MusictestInterview
-                               andField10:@"Interview"              field10Value:Interview
-                               andField11:@"testInterviewPortfolio" field11Value:testInterviewPortfolio
-                               andField12:@"AQA"                    field12Value:AQA
-                               andField13:@"VacantPlaces"           field13Value:VacantPlaces
-         
-         ];
-    }
 }
 
 -(void) viewWillAppear:(BOOL)animated;
@@ -613,22 +551,19 @@ struct cao_entry entryA;
             char *field9 = (char *) sqlite3_column_text(statement_1,8);
             field9Str = [[NSString alloc] initWithUTF8String : field9];
             
-            NSLog(@"in main extract columns per roow loop - field1Str = %@ ",field1Str);
-            
             truncatedField2Str = [field2Str substringToIndex:[field2Str length]-2];
             
-
-            truncatedField4Str = field4Str;
             
-            if([field5Str isEqualToString:@""]){
+            NSString *newStr = [field5Str substringWithRange:NSMakeRange(3, [field5Str length]-3)];
+            
+            
+            if([field5Str isEqualToString:@""]  || ([newStr length] > 3) )
                 truncatedField5Str = field5Str;
-                NSLog(@"in 5th fiels string if statement");
-            }
             
-            else{
+            
+            else
                 truncatedField5Str = [field5Str substringToIndex:[field5Str length]-2];
-                NSLog(@"in 5th fiels string ELSE statement");
-            }
+            
             
             if([field6Str isEqualToString:@""])
                  truncatedField6Str = field6Str;
@@ -1460,268 +1395,257 @@ struct cao_entry entryA;
     points7_2011.text=@"";
     points7_2012.text=@"";
     
-    //course_8.titleLabel.text=@"";
+   
     [course_8 setTitle: @"" forState:UIControlStateNormal];
-    
     points8_2010.text=@"";
     points8_2011.text=@"";
     points8_2012.text=@"";
     
-    //course_9.titleLabel.text=@"";
+
     [course_9 setTitle: @"" forState:UIControlStateNormal];
-    
     points9_2010.text=@"";
     points9_2011.text=@"";
     points9_2012.text=@"";
     
-    //course_10.titleLabel.text=@"";
-    [course_10 setTitle: @"" forState:UIControlStateNormal];
     
+    [course_10 setTitle: @"" forState:UIControlStateNormal];
     points10_2010.text=@"";
     points10_2011.text=@"";
     points10_2012.text=@"";
     
     
-    //course_11.titleLabel.text=@"";
+
     [course_11 setTitle: @"" forState:UIControlStateNormal];
-    
     points11_2010.text=@"";
     points11_2011.text=@"";
     points11_2012.text=@"";
     
-    //course_12.titleLabel.text=@"";
-    [course_12 setTitle: @"" forState:UIControlStateNormal];
     
+    [course_12 setTitle: @"" forState:UIControlStateNormal];
     points12_2010.text=@"";
     points12_2011.text=@"";
     points12_2012.text=@"";
-    
-    //course_13.titleLabel.text=@"";
+   
     [course_13 setTitle: @"" forState:UIControlStateNormal];
     points13_2010.text=@"";
     points13_2011.text=@"";
     points13_2012.text=@"";
     
-    //course_14.titleLabel.text=@"";
     [course_14 setTitle: @"" forState:UIControlStateNormal];
     points14_2010.text=@"";
     points14_2011.text=@"";
     points14_2012.text=@"";
     
-    //course_15.titleLabel.text=@"";
     [course_15 setTitle: @"" forState:UIControlStateNormal];
     points15_2010.text=@"";
     points15_2011.text=@"";
     points15_2012.text=@"";
     
     
-    //course_16.titleLabel.text=@"";
+   
     [course_16 setTitle: @"" forState:UIControlStateNormal];
     points16_2010.text=@"";
     points16_2011.text=@"";
     points16_2012.text=@"";
     
-    //course_17.titleLabel.text=@"";
+    
     [course_17 setTitle: @"" forState:UIControlStateNormal];
     points17_2010.text=@"";
     points17_2011.text=@"";
     points17_2012.text=@"";
     
-    //course_18.titleLabel.text=@"";
+   
     [course_18 setTitle: @"" forState:UIControlStateNormal];
     points18_2010.text=@"";
     points18_2011.text=@"";
     points18_2012.text=@"";
     
-    //course_19.titleLabel.text=@"";
+    
     [course_19 setTitle: @"" forState:UIControlStateNormal];
     points19_2010.text=@"";
     points19_2011.text=@"";
     points19_2012.text=@"";
     
-    //course_20.titleLabel.text=@"";
+
     [course_20 setTitle: @"" forState:UIControlStateNormal];
     points20_2010.text=@"";
     points20_2011.text=@"";
     points20_2012.text=@"";
     
     
-    //course_21.titleLabel.text=@"";
+
     [course_21 setTitle: @"" forState:UIControlStateNormal];
     points21_2010.text=@"";
     points21_2011.text=@"";
     points21_2012.text=@"";
     
-    //course_22.titleLabel.text=@"";
+
     [course_22 setTitle: @"" forState:UIControlStateNormal];
     points22_2010.text=@"";
     points22_2011.text=@"";
     points22_2012.text=@"";
     
-    //course_23.titleLabel.text=@"";
+
     [course_23 setTitle: @"" forState:UIControlStateNormal];
     points23_2010.text=@"";
     points23_2011.text=@"";
     points23_2012.text=@"";
     
-    //course_24.titleLabel.text=@"";
+ 
     [course_24 setTitle: @"" forState:UIControlStateNormal];
     points24_2010.text=@"";
     points24_2011.text=@"";
     points24_2012.text=@"";
     
-    //course_25.titleLabel.text=@"";
+
     [course_25 setTitle: @"" forState:UIControlStateNormal];
     points25_2010.text=@"";
     points25_2011.text=@"";
     points25_2012.text=@"";
     
-    //course_26.titleLabel.text=@"";
+
     [course_26 setTitle: @"" forState:UIControlStateNormal];
     points26_2010.text=@"";
     points26_2011.text=@"";
     points26_2012.text=@"";
     
-    //course_27.titleLabel.text=@"";
+
     [course_27 setTitle: @"" forState:UIControlStateNormal];
     points27_2010.text=@"";
     points27_2011.text=@"";
     points27_2012.text=@"";
     
-    //course_28.titleLabel.text=@"";
+
     [course_28 setTitle: @"" forState:UIControlStateNormal];
     points28_2010.text=@"";
     points28_2011.text=@"";
     points28_2012.text=@"";
     
-    //course_29.titleLabel.text=@"";
+ 
     [course_29 setTitle: @"" forState:UIControlStateNormal];
     points29_2010.text=@"";
     points29_2011.text=@"";
     points29_2012.text=@"";
     
-    //course_30.titleLabel.text=@"";
     [course_30 setTitle: @"" forState:UIControlStateNormal];
     points30_2010.text=@"";
     points30_2011.text=@"";
     points30_2012.text=@"";
     
-    //course_31.titleLabel.text=@"";
     [course_31 setTitle: @"" forState:UIControlStateNormal];
     points31_2010.text=@"";
     points31_2011.text=@"";
     points31_2012.text=@"";
     
-    //course_32.titleLabel.text=@"";
     [course_32 setTitle: @"" forState:UIControlStateNormal];
     points32_2010.text=@"";
     points32_2011.text=@"";
     points32_2012.text=@"";
     
-    //course_33.titleLabel.text=@"";
+    
     [course_33 setTitle: @"" forState:UIControlStateNormal];
     points33_2010.text=@"";
     points33_2011.text=@"";
     points33_2012.text=@"";
     
-    //course_34.titleLabel.text=@"";
+    
     [course_34 setTitle: @"" forState:UIControlStateNormal];
     points34_2010.text=@"";
     points34_2011.text=@"";
     points34_2012.text=@"";
     
-    //course_35.titleLabel.text=@"";
+    
     [course_35 setTitle: @"" forState:UIControlStateNormal];
     points35_2010.text=@"";
     points35_2011.text=@"";
     points35_2012.text=@"";
     
-    //course_36.titleLabel.text=@"";
+    
     [course_36 setTitle: @"" forState:UIControlStateNormal];
     points36_2010.text=@"";
     points36_2011.text=@"";
     points36_2012.text=@"";
     
-    //course_37.titleLabel.text=@"";
+    
     [course_37 setTitle: @"" forState:UIControlStateNormal];
     points37_2010.text=@"";
     points37_2011.text=@"";
     points37_2012.text=@"";
     
-    //course_38.titleLabel.text=@"";
+    
     [course_38 setTitle: @"" forState:UIControlStateNormal];
     points38_2010.text=@"";
     points38_2011.text=@"";
     points38_2012.text=@"";
     
-    //course_39.titleLabel.text=@"";
+   
     [course_39 setTitle: @"" forState:UIControlStateNormal];
     points39_2010.text=@"";
     points39_2011.text=@"";
     points39_2012.text=@"";
     
-    //course_40.titleLabel.text=@"";
+   
     [course_40 setTitle: @"" forState:UIControlStateNormal];
     points40_2010.text=@"";
     points40_2011.text=@"";
     points40_2012.text=@"";
     
     
-    //course_30.titleLabel.text=@"";
+   
     [course_41 setTitle: @"" forState:UIControlStateNormal];
     points41_2010.text=@"";
     points41_2011.text=@"";
     points41_2012.text=@"";
     
-    //course_31.titleLabel.text=@"";
+    
     [course_42 setTitle: @"" forState:UIControlStateNormal];
     points42_2010.text=@"";
     points42_2011.text=@"";
     points42_2012.text=@"";
     
-    //course_32.titleLabel.text=@"";
+    
     [course_43 setTitle: @"" forState:UIControlStateNormal];
     points43_2010.text=@"";
     points43_2011.text=@"";
     points43_2012.text=@"";
     
-    //course_33.titleLabel.text=@"";
+    
     [course_44 setTitle: @"" forState:UIControlStateNormal];
     points44_2010.text=@"";
     points44_2011.text=@"";
     points44_2012.text=@"";
     
-    //course_34.titleLabel.text=@"";
+    
     [course_45 setTitle: @"" forState:UIControlStateNormal];
     points45_2010.text=@"";
     points45_2011.text=@"";
     points45_2012.text=@"";
     
-    //course_35.titleLabel.text=@"";
+    
     [course_46 setTitle: @"" forState:UIControlStateNormal];
     points46_2010.text=@"";
     points46_2011.text=@"";
     points46_2012.text=@"";
     
-    //course_36.titleLabel.text=@"";
+
     [course_47 setTitle: @"" forState:UIControlStateNormal];
     points47_2010.text=@"";
     points47_2011.text=@"";
     points47_2012.text=@"";
     
-    //course_37.titleLabel.text=@"";
+
     [course_48 setTitle: @"" forState:UIControlStateNormal];
     points48_2010.text=@"";
     points48_2011.text=@"";
     points48_2012.text=@"";
     
-    //course_38.titleLabel.text=@"";
+
     [course_49 setTitle: @"" forState:UIControlStateNormal];
     points49_2010.text=@"";
     points49_2011.text=@"";
     points49_2012.text=@"";
     
-    //course_40.titleLabel.text=@"";
+ 
     [course_50 setTitle: @"" forState:UIControlStateNormal];
     points50_2010.text=@"";
     points50_2011.text=@"";
@@ -1776,7 +1700,178 @@ struct cao_entry entryA;
     points60_2010.text=@"";
     points60_2011.text=@"";
     points60_2012.text=@"";
+
     
+    [course_61 setTitle: @"" forState:UIControlStateNormal];
+    points61_2010.text=@"";
+    points61_2011.text=@"";
+    points61_2012.text=@"";
+
+    [course_62 setTitle: @"" forState:UIControlStateNormal];
+    points62_2010.text=@"";
+    points62_2011.text=@"";
+    points62_2012.text=@"";
+    
+
+    [course_63 setTitle: @"" forState:UIControlStateNormal];
+    points63_2010.text=@"";
+    points63_2011.text=@"";
+    points63_2012.text=@"";
+    
+
+    [course_64 setTitle: @"" forState:UIControlStateNormal];
+    points64_2010.text=@"";
+    points64_2011.text=@"";
+    points64_2012.text=@"";
+    
+
+    [course_65 setTitle: @"" forState:UIControlStateNormal];
+    points65_2010.text=@"";
+    points65_2011.text=@"";
+    points65_2012.text=@"";
+    
+
+    [course_66 setTitle: @"" forState:UIControlStateNormal];
+    points66_2010.text=@"";
+    points66_2011.text=@"";
+    points66_2012.text=@"";
+    
+
+    [course_67 setTitle: @"" forState:UIControlStateNormal];
+    points67_2010.text=@"";
+    points67_2011.text=@"";
+    points67_2012.text=@"";
+    
+
+    [course_68 setTitle: @"" forState:UIControlStateNormal];
+    points68_2010.text=@"";
+    points68_2011.text=@"";
+    points68_2012.text=@"";
+    
+    [course_69 setTitle: @"" forState:UIControlStateNormal];
+    points69_2010.text=@"";
+    points69_2011.text=@"";
+    points69_2012.text=@"";
+    
+
+    [course_70 setTitle: @"" forState:UIControlStateNormal];
+    points70_2010.text=@"";
+    points70_2011.text=@"";
+    points70_2012.text=@"";
+    
+  
+    [course_71 setTitle: @"" forState:UIControlStateNormal];
+    points71_2010.text=@"";
+    points71_2011.text=@"";
+    points71_2012.text=@"";
+    
+
+    [course_72 setTitle: @"" forState:UIControlStateNormal];
+    points72_2010.text=@"";
+    points72_2011.text=@"";
+    points72_2012.text=@"";
+    
+    [course_73 setTitle: @"" forState:UIControlStateNormal];
+    points73_2010.text=@"";
+    points73_2011.text=@"";
+    points73_2012.text=@"";
+    
+
+    [course_74 setTitle: @"" forState:UIControlStateNormal];
+    points74_2010.text=@"";
+    points74_2011.text=@"";
+    points74_2012.text=@"";
+    
+   
+    [course_75 setTitle: @"" forState:UIControlStateNormal];
+    points75_2010.text=@"";
+    points75_2011.text=@"";
+    points75_2012.text=@"";
+    
+
+    [course_76 setTitle: @"" forState:UIControlStateNormal];
+    points76_2010.text=@"";
+    points76_2011.text=@"";
+    points76_2012.text=@"";
+    
+
+    [course_77 setTitle: @"" forState:UIControlStateNormal];
+    points77_2010.text=@"";
+    points77_2011.text=@"";
+    points77_2012.text=@"";
+    
+
+    [course_78 setTitle: @"" forState:UIControlStateNormal];
+    points78_2010.text=@"";
+    points78_2011.text=@"";
+    points78_2012.text=@"";
+    
+ 
+    [course_79 setTitle: @"" forState:UIControlStateNormal];
+    points79_2010.text=@"";
+    points79_2011.text=@"";
+    points79_2012.text=@"";
+    
+
+    [course_80 setTitle: @"" forState:UIControlStateNormal];
+    points80_2010.text=@"";
+    points80_2011.text=@"";
+    points80_2012.text=@"";
+    
+    [course_81 setTitle: @"" forState:UIControlStateNormal];
+    points81_2010.text=@"";
+    points81_2011.text=@"";
+    points81_2012.text=@"";
+    
+    [course_82 setTitle: @"" forState:UIControlStateNormal];
+    points82_2010.text=@"";
+    points82_2011.text=@"";
+    points82_2012.text=@"";
+    
+    [course_83 setTitle: @"" forState:UIControlStateNormal];
+    points83_2010.text=@"";
+    points83_2011.text=@"";
+    points83_2012.text=@"";
+    
+    [course_84 setTitle: @"" forState:UIControlStateNormal];
+    points84_2010.text=@"";
+    points84_2011.text=@"";
+    points84_2012.text=@"";
+    
+    [course_85 setTitle: @"" forState:UIControlStateNormal];
+    points85_2010.text=@"";
+    points85_2011.text=@"";
+    points85_2012.text=@"";
+    
+    [course_86 setTitle: @"" forState:UIControlStateNormal];
+    points86_2010.text=@"";
+    points86_2011.text=@"";
+    points86_2012.text=@"";
+    
+    [course_87 setTitle: @"" forState:UIControlStateNormal];
+    points87_2010.text=@"";
+    points87_2011.text=@"";
+    points87_2012.text=@"";
+    
+    [course_88 setTitle: @"" forState:UIControlStateNormal];
+    points88_2010.text=@"";
+    points88_2011.text=@"";
+    points88_2012.text=@"";
+    
+    [course_89 setTitle: @"" forState:UIControlStateNormal];
+    points89_2010.text=@"";
+    points89_2011.text=@"";
+    points89_2012.text=@"";
+    
+    [course_90 setTitle: @"" forState:UIControlStateNormal];
+    points90_2010.text=@"";
+    points90_2011.text=@"";
+    points90_2012.text=@"";
+ 
+    [course_91 setTitle: @"" forState:UIControlStateNormal];
+    points91_2010.text=@"";
+    points91_2011.text=@"";
+    points91_2012.text=@"";
     
 }
 
@@ -1852,9 +1947,9 @@ struct cao_entry entryA;
 
     alertMsg = [[UIAlertView alloc] initWithTitle:@"Additional Info."
                 
-                                          message: extraStuff_14
-                                         delegate:nil cancelButtonTitle:@"OK I get it ! :)"
-                                otherButtonTitles:nil];
+                  message: extraStuff_14
+                  delegate:nil cancelButtonTitle:@"OK I get it ! :)"
+                  otherButtonTitles:nil];
     
     
     
@@ -1881,7 +1976,7 @@ struct cao_entry entryA;
     
     NSString *documentsDir = [paths lastObject];
     
-    return[documentsDir stringByAppendingPathComponent:@"cao_db_cpugenerated_data_oldData.sql"];
+    return[documentsDir stringByAppendingPathComponent:@"cao_db_RealLevel8Data_1.sql"];
 }
 
 

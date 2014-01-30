@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		232C3C1E1899CA67009F6001 /* cao_db_RealLevel8Data_1.sql in Resources */ = {isa = PBXBuildFile; fileRef = 232C3C1D1899CA67009F6001 /* cao_db_RealLevel8Data_1.sql */; };
 		2358303A171FB2B400647CB6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 23583039171FB2B400647CB6 /* libsqlite3.dylib */; };
 		2366F65A175C727500E17B04 /* BIDCollegeLevelDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2366F659175C727500E17B04 /* BIDCollegeLevelDetailViewController.m */; };
 		23C09E51171B68EF00EADB40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C09E50171B68EF00EADB40 /* UIKit.framework */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		232C3C1D1899CA67009F6001 /* cao_db_RealLevel8Data_1.sql */ = {isa = PBXFileReference; lastKnownFileType = file; name = cao_db_RealLevel8Data_1.sql; path = ../../../../../../CAO_App/cao_db_RealLevel8Data_1.sql; sourceTree = "<group>"; };
 		23583039171FB2B400647CB6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		2366F658175C727500E17B04 /* BIDCollegeLevelDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDCollegeLevelDetailViewController.h; sourceTree = "<group>"; };
 		2366F659175C727500E17B04 /* BIDCollegeLevelDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDCollegeLevelDetailViewController.m; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		23C09E57171B68EF00EADB40 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				232C3C1D1899CA67009F6001 /* cao_db_RealLevel8Data_1.sql */,
 				23C09E58171B68EF00EADB40 /* NavigateTables-Info.plist */,
 				23C09E59171B68EF00EADB40 /* InfoPlist.strings */,
 				23C09E5C171B68EF00EADB40 /* main.m */,
@@ -210,6 +213,7 @@
 				23C09E67171B68EF00EADB40 /* Default-568h@2x.png in Resources */,
 				23C09E7E171BE62200EADB40 /* ContentDetailView.xib in Resources */,
 				23E227B817FF5F4C0056F8C4 /* CollegeLevelDetailView.xib in Resources */,
+				232C3C1E1899CA67009F6001 /* cao_db_RealLevel8Data_1.sql in Resources */,
 				23CEDB03187CC2080005471D /* CollegeLevel67DetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

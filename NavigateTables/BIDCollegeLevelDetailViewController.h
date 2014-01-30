@@ -4,19 +4,6 @@
 #import <sqlite3.h>
 
 
-/* attempt to create a subclassed Button*/
-/*
- @interface CustomButton : UIButton
- 
- @property (copy,nonatomic) NSString *new_fucnt;
- 
- @end
- */
-/*             end attempt             */
-
-
-/* AGAIN */
-
 @interface UIButton(Assign)
 
 @property (nonatomic, retain) NSObject *assign;
@@ -35,6 +22,7 @@
     IBOutlet UILabel *year_1;
     IBOutlet UILabel *year_2;
     IBOutlet UILabel *year_3;
+
     
     //working line.
     IBOutlet UIButton  *course_2;IBOutlet UIButton  *course_3;IBOutlet UIButton  *course_4;
