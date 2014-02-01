@@ -21,11 +21,8 @@ static NSString *CellIdentifier = @"Cell";
         self.title = @"Level 8 Points by institution";
         
         NSAttributedString *text = @"Hello";
-        //[text setColor:[UIColor grayColor]];
         
-        self.colleges = @[@"Athlone IT",@"Carlow College",@"IT Carlow ",@"Cork IT",@"Royal College of Surgeons",@"University College Dublin",@"Dundalk IT",
-                          
-                          @"University College Cork",@"All Hallows",@"American College",@"Church of Ireland",@"Marino Institute of technology",@"Dublin Business School",@"IT Blanchardstown",@"Galway - Mayo IT",@"NUI - GALWAY",@"ST PATRICKS THURLES",@"DUBLIN CITY UNIVERSITY",@"GRIFFITH COLLEGE DUBLIN CORK AND LIMERICK",@"INSTITUTE OF BUSINESS AND TECHNOLOGY  SWORDS",@"MATER DEI",@"NATIONAL COLLEGE OF ART AND DESIGN",@"UNIVERSITY OF LIMERICK",@"LIMERICK IT",@"DUBLIN INSTITUE OF TECHNOLOGY",@"DUN LAOIGHRE IADT",@"INDEPENDENT COLLEGES DUBLIN",@"ICD BUSINESS SCHOOL",@"NATIONAL COLLEGE OF IRELAND",@"LETTERKENNY IT",@"MARY IMMACULATE LIMERICK",@"NATIONAL COUNSELLING AND PSYCHOTHERAPY INSTITUTE",@"ST PATRICKS (PONTIFICAL) -MAYNOOTH",@"NUI - MAYNOOTH",@"SHANNON COLLEGE OF HOTEL MGT",@"IT TALLAGHT",@"ST PATRICKS DRUMCONDRA",@"TRINITY COLLEGE DUBLIN",@"ST ANGELAS SLIGO",@"IT SLIGO",@"IT TRALEE",@"WATERFORD INSTITUTE OF TECHNOLOGY"];
+        self.colleges = @[@"Athlone IT",@"Carlow College",@"IT Carlow ",@"Cork IT",@"Royal college of Surgeons",@"University College Dublin",@"Dundalk IT",@"University College Cork",@"All Hallows",@"American College",@"Church of Ireland College",@"Marino Institute of technology",@"Dublin Business School",@"IT Blanchardstown",@"Galway - Mayo IT",@"NUI - Galway",@"St Patricks - Thurles",@"Dublin City University",@"Griffith College Dublin, Cork and Limerick",@"Institute of Business and Technology Swords",@"Mater Dei",@"National College of Art and Design",@"University of Limerick",@"Limerick IT",@"Dublin Institute of Technology",@"Dun Laoghaire IADT",@"Independent Colleges Dublin ",@"ICD Business School",@"National College of Ireland",@"Letterkenny IT",@"Marino Institute of Technology",@"National Counselling and Psychotherapy Institute",@"ST Patricks (Pontifical)-Maynooth",@"NUI - Maynooth",@"Shannon College of Hotel Mgt",@"IT Tallaght",@"St Patricks Drumcondra",@"Trinity College Dublin",@"St Angelas - Sligo",@"IT Sligo",@"IT Tralee",@"Waterford Institute of Technology"];
         
         
         /*reverse next two lines to retrieve original*/

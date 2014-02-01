@@ -97,6 +97,7 @@
                 <outlet property="course_9" destination="zmz-fy-dpx" id="iN7-NP-Jli"/>
                 <outlet property="course_90" destination="Qjj-SX-UzB" id="wlE-tw-02D"/>
                 <outlet property="course_91" destination="L6U-QI-M8A" id="l0b-oN-7ZV"/>
+                <outlet property="course_92" destination="pbA-wZ-V71" id="XDF-1A-ib4"/>
                 <outlet property="points10_2010" destination="ruX-5J-DJL" id="gok-py-ko4"/>
                 <outlet property="points10_2011" destination="Jmt-aO-Awa" id="pGz-7U-2Gt"/>
                 <outlet property="points10_2012" destination="76F-hO-CRo" id="p6s-PH-mcR"/>
@@ -364,6 +365,9 @@
                 <outlet property="points91_2010" destination="dAq-kH-p0T" id="0KA-sZ-XXT"/>
                 <outlet property="points91_2011" destination="vbw-1p-Mhp" id="pFE-fL-MJ4"/>
                 <outlet property="points91_2012" destination="RrF-jv-LPY" id="ubV-Im-wZL"/>
+                <outlet property="points92_2010" destination="vez-tI-7lh" id="X0a-pW-G7W"/>
+                <outlet property="points92_2011" destination="k63-w6-zeU" id="r7v-KI-3Tb"/>
+                <outlet property="points92_2012" destination="Ds0-6I-WLf" id="AqN-cm-b40"/>
                 <outlet property="points9_2010" destination="Ls4-Vw-fpA" id="L0X-NP-vzS"/>
                 <outlet property="points9_2011" destination="k2G-qh-wD8" id="Ltg-TK-947"/>
                 <outlet property="points9_2012" destination="JvH-P0-dx8" id="7a8-jW-jtV"/>
@@ -377,7 +381,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="rHq-Kr-yeC">
-                    <rect key="frame" x="6" y="10" width="320" height="741"/>
+                    <rect key="frame" x="6" y="10" width="320" height="728"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="up5-aZ-S6j">
@@ -3030,6 +3034,35 @@
                                 <action selector="namePressed:" destination="-1" eventType="touchUpInside" id="Jdv-TG-y3c"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" id="pbA-wZ-V71">
+                            <rect key="frame" x="20" y="3036" width="76" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="92">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="namePressed:" destination="-1" eventType="touchUpInside" id="GDI-92-MIt"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ds0-6I-WLf">
+                            <rect key="frame" x="99" y="3040" width="82" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vez-tI-7lh">
+                            <rect key="frame" x="251" y="3040" width="42" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k63-w6-zeU">
+                            <rect key="frame" x="183" y="3040" width="42" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                 </scrollView>
             </subviews>
