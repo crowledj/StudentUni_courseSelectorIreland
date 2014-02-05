@@ -27,9 +27,9 @@ static NSString *CellIdentifier = @"Cell";
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.title = @"Level 6,7 Points by institution";
+        self.title = @"Level 6,7 Min. Points by Institution";
         
-        self.colleges = @[@"UCC",@"TCD",@"UCD",@"NUIG",@"DIT",@"CIT",@"DCU",@"DBS",@"GMT"];
+        self.colleges = @[@"ATHLONE IT",@"CARLOW COLLEGE",@"IT TALLAGHT ",@"NATIONAL COLLEGE OF IRELAND",@"PORTOBELLO COLLEGE",@"TRINITY COLLEGE DUBLIN",@"DUNDALK IT",@"UNIVERSITY OF LIMERICK",@"IT CARLOW",@"CORK IT",@"COLLEGE OF COMPUTER TRAINING",@"GALWAY-MAYO IT",@"LETTERKENNY IT",@"DUBLIN BUSINESS SCHOOL",@"DUBLIN INSTITUTE OF TECHNOLOGY",@"NATIONAL COUNSELLING AND PSYCHOTHERAPY INSTITUTE",@"LIMERICK IT",@"IT SLIGO",@"ST ANGELA'S - SLIGO",@"DUN LAOGHAIRE IADT",@"GRAFTON COLLEGE of MANAGEMENT SCIENCES",@"GRIFFITH COLLEGE DUBLIN, CORK AND LIMERICK",@"INSTITUTE OF BUSINESS AND TECHNOLOGY  SWORDS",@"IT BLANCHARDSTOWN ",@"IT TRALEE",@"WATERFORD INSTITUTE OF TECHNOLOGY"];
         
         /*reverse next two lines to retrieve original*/
         
@@ -44,9 +44,6 @@ static NSString *CellIdentifier = @"Cell";
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"CAO_medium_info.gif"]];
-    
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CellIdentifier];
     
 }
@@ -62,7 +59,7 @@ static NSString *CellIdentifier = @"Cell";
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+    //cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     cell.textLabel.text = self.colleges[indexPath.row];
     
     return cell;
@@ -75,16 +72,17 @@ static NSString *CellIdentifier = @"Cell";
 {
     /* trying to put course name in info button.*/
     
-    NSString *name = @"Hey do you see the disclosure button?";
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:name
-                                                    message: @"Touch to drill down instead."
-                                                   delegate:nil cancelButtonTitle:@"Won't happen again"
-                                          otherButtonTitles:nil];
-    [alert show];
+    self.detailController.title = @"Disclosure Button Pressed";
+    NSString *selectedCollege = self.colleges[indexPath.row];
+    
+    self.detailController.title = selectedCollege;
+    [self.navigationController pushViewController:self.detailController animated:YES];
+    
     
 }
 
 
+/*
 -(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
     self.detailController.title = @"Disclosure Button Pressed";
@@ -94,7 +92,7 @@ static NSString *CellIdentifier = @"Cell";
     [self.navigationController pushViewController:self.detailController animated:YES];
     
 }
-
+*/
 
 @end
 

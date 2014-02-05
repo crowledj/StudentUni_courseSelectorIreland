@@ -60,7 +60,7 @@ static NSString *CellIdentifier = @"Cell";
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+    //cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     cell.textLabel.text = self.courses[indexPath.row];
     
     return cell;

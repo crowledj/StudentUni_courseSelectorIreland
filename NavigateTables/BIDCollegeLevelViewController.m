@@ -18,7 +18,7 @@ static NSString *CellIdentifier = @"Cell";
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.title = @"Level 8 Points by institution";
+        self.title = @"Level 8 Min. Points by Institution";
         
         NSAttributedString *text = @"Hello";
         
@@ -59,7 +59,7 @@ static NSString *CellIdentifier = @"Cell";
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+    //cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     cell.textLabel.text = self.colleges[indexPath.row];
     
     return cell;
@@ -81,6 +81,7 @@ static NSString *CellIdentifier = @"Cell";
     
 }
 
+/*
 
 -(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
@@ -124,6 +125,8 @@ static NSString *CellIdentifier = @"Cell";
     [alert show];
     
 }
+ 
+ */
 
 
 @end

@@ -11,6 +11,5 @@
 @interface BIDFirstLevelViewController : UITableViewController
 
 @property (copy,nonatomic) NSArray *controller;
-//@property (copy,nonatomic) NSArray *controller2;
 
 @end

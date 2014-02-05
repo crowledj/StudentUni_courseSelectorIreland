@@ -21,9 +21,6 @@
 		23C09E67171B68EF00EADB40 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23C09E66171B68EF00EADB40 /* Default-568h@2x.png */; };
 		23C09E6F171B699300EADB40 /* BIDFirstLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C09E6E171B699300EADB40 /* BIDFirstLevelViewController.m */; };
 		23C09E72171B6B2100EADB40 /* BIDSecondLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C09E71171B6B2100EADB40 /* BIDSecondLevelViewController.m */; };
-		23C09E75171BA30100EADB40 /* BIDContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C09E74171BA30100EADB40 /* BIDContentViewController.m */; };
-		23C09E78171BAD2D00EADB40 /* BIDContentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C09E77171BAD2D00EADB40 /* BIDContentDetailViewController.m */; };
-		23C09E7E171BE62200EADB40 /* ContentDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23C09E7D171BE62200EADB40 /* ContentDetailView.xib */; };
 		23C34D131727085300C5FEBB /* BIDCollegeLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C34D121727085300C5FEBB /* BIDCollegeLevelViewController.m */; };
 		23CEDAFD187CBEAF0005471D /* BIDCollegeLevel67ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CEDAFB187CBEAF0005471D /* BIDCollegeLevel67ViewController.m */; };
 		23CEDB01187CC0150005471D /* BIDCollegeLevel67DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CEDB00187CC0150005471D /* BIDCollegeLevel67DetailViewController.m */; };
@@ -53,11 +50,6 @@
 		23C09E6E171B699300EADB40 /* BIDFirstLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDFirstLevelViewController.m; sourceTree = "<group>"; };
 		23C09E70171B6B2100EADB40 /* BIDSecondLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDSecondLevelViewController.h; sourceTree = "<group>"; };
 		23C09E71171B6B2100EADB40 /* BIDSecondLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDSecondLevelViewController.m; sourceTree = "<group>"; };
-		23C09E73171BA30100EADB40 /* BIDContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDContentViewController.h; sourceTree = "<group>"; };
-		23C09E74171BA30100EADB40 /* BIDContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDContentViewController.m; sourceTree = "<group>"; };
-		23C09E76171BAD2D00EADB40 /* BIDContentDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDContentDetailViewController.h; sourceTree = "<group>"; };
-		23C09E77171BAD2D00EADB40 /* BIDContentDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDContentDetailViewController.m; sourceTree = "<group>"; };
-		23C09E7D171BE62200EADB40 /* ContentDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentDetailView.xib; sourceTree = "<group>"; };
 		23C34D111727085300C5FEBB /* BIDCollegeLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDCollegeLevelViewController.h; sourceTree = "<group>"; };
 		23C34D121727085300C5FEBB /* BIDCollegeLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDCollegeLevelViewController.m; sourceTree = "<group>"; };
 		23CEDAFA187CBEAF0005471D /* BIDCollegeLevel67ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDCollegeLevel67ViewController.h; sourceTree = "<group>"; };
@@ -119,11 +111,6 @@
 				23C09E6E171B699300EADB40 /* BIDFirstLevelViewController.m */,
 				23C09E70171B6B2100EADB40 /* BIDSecondLevelViewController.h */,
 				23C09E71171B6B2100EADB40 /* BIDSecondLevelViewController.m */,
-				23C09E73171BA30100EADB40 /* BIDContentViewController.h */,
-				23C09E74171BA30100EADB40 /* BIDContentViewController.m */,
-				23C09E76171BAD2D00EADB40 /* BIDContentDetailViewController.h */,
-				23C09E77171BAD2D00EADB40 /* BIDContentDetailViewController.m */,
-				23C09E7D171BE62200EADB40 /* ContentDetailView.xib */,
 				23C34D121727085300C5FEBB /* BIDCollegeLevelViewController.m */,
 				23C34D111727085300C5FEBB /* BIDCollegeLevelViewController.h */,
 				2366F658175C727500E17B04 /* BIDCollegeLevelDetailViewController.h */,
@@ -211,7 +198,6 @@
 				23C09E63171B68EF00EADB40 /* Default.png in Resources */,
 				23C09E65171B68EF00EADB40 /* Default@2x.png in Resources */,
 				23C09E67171B68EF00EADB40 /* Default-568h@2x.png in Resources */,
-				23C09E7E171BE62200EADB40 /* ContentDetailView.xib in Resources */,
 				23E227B817FF5F4C0056F8C4 /* CollegeLevelDetailView.xib in Resources */,
 				23CEDB03187CC2080005471D /* CollegeLevel67DetailView.xib in Resources */,
 				23660237189CF972006DCC1A /* cao_db_RealLevel8Data_2.sql in Resources */,
@@ -229,9 +215,7 @@
 				23C09E61171B68EF00EADB40 /* BIDAppDelegate.m in Sources */,
 				23C09E6F171B699300EADB40 /* BIDFirstLevelViewController.m in Sources */,
 				23C09E72171B6B2100EADB40 /* BIDSecondLevelViewController.m in Sources */,
-				23C09E75171BA30100EADB40 /* BIDContentViewController.m in Sources */,
 				23CEDB01187CC0150005471D /* BIDCollegeLevel67DetailViewController.m in Sources */,
-				23C09E78171BAD2D00EADB40 /* BIDContentDetailViewController.m in Sources */,
 				23C34D131727085300C5FEBB /* BIDCollegeLevelViewController.m in Sources */,
 				23CEDAFD187CBEAF0005471D /* BIDCollegeLevel67ViewController.m in Sources */,
 				2366F65A175C727500E17B04 /* BIDCollegeLevelDetailViewController.m in Sources */,

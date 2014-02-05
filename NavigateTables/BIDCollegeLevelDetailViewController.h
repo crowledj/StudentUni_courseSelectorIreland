@@ -12,7 +12,6 @@
 
 
 
-
 @interface BIDCollegeLevelDetailViewController : UIViewController{
     
     IBOutlet UIScrollView *scroller;
@@ -35,92 +34,6 @@
     IBOutlet UIButton  *course_81,*course_82,*course_83,*course_84,*course_85,*course_86,*course_87,*course_88,*course_89,*course_90;
     IBOutlet UIButton  *course_91,*course_92;
     
-
-    /*
-    //working line.
-    IBOutlet UIButton  *course_2;IBOutlet UIButton  *course_3;IBOutlet UIButton  *course_4;
-    IBOutlet UIButton  *course_5;IBOutlet UIButton  *course_6;IBOutlet UIButton  *course_7;
-    IBOutlet UIButton  *course_8;IBOutlet UIButton  *course_9;IBOutlet UIButton  *course_10;
-    IBOutlet UIButton  *course_11;IBOutlet UIButton  *course_12;IBOutlet UIButton  *course_13;
-    IBOutlet UIButton  *course_14;
-    IBOutlet UIButton  *course_15;
-    IBOutlet UIButton  *course_16;
-    IBOutlet UIButton  *course_17;
-    IBOutlet UIButton  *course_18;
-    IBOutlet UIButton  *course_19;
-    IBOutlet UIButton  *course_20;
-    IBOutlet UIButton  *course_21;
-    IBOutlet UIButton  *course_22;
-    IBOutlet UIButton  *course_23;
-    IBOutlet UIButton  *course_24;
-    IBOutlet UIButton  *course_25;
-    IBOutlet UIButton  *course_26;
-    IBOutlet UIButton  *course_27;
-    IBOutlet UIButton  *course_28;
-    IBOutlet UIButton  *course_29;
-    IBOutlet UIButton  *course_30;
-    IBOutlet UIButton  *course_31;
-    IBOutlet UIButton  *course_32;
-    IBOutlet UIButton  *course_33;
-    IBOutlet UIButton  *course_34;
-    IBOutlet UIButton  *course_35;
-    IBOutlet UIButton  *course_36;
-    IBOutlet UIButton  *course_37;
-    IBOutlet UIButton  *course_38;
-    IBOutlet UIButton  *course_39;
-    IBOutlet UIButton  *course_40;
-    IBOutlet UIButton  *course_41;
-    IBOutlet UIButton  *course_42;
-    IBOutlet UIButton  *course_43;
-    IBOutlet UIButton  *course_44;
-    IBOutlet UIButton  *course_45;
-    IBOutlet UIButton  *course_46;
-    IBOutlet UIButton  *course_47;
-    IBOutlet UIButton  *course_48;
-    IBOutlet UIButton  *course_49;
-    IBOutlet UIButton  *course_50;
-    IBOutlet UIButton  *course_51;
-    IBOutlet UIButton  *course_52;
-    IBOutlet UIButton  *course_53;
-    IBOutlet UIButton  *course_54;
-    IBOutlet UIButton  *course_55;
-    IBOutlet UIButton  *course_56;
-    IBOutlet UIButton  *course_57;
-    IBOutlet UIButton  *course_58;
-    IBOutlet UIButton  *course_59;
-    IBOutlet UIButton  *course_60;
-    IBOutlet UIButton  *course_61;
-    IBOutlet UIButton  *course_62;
-    IBOutlet UIButton  *course_63;
-    IBOutlet UIButton  *course_64;
-    IBOutlet UIButton  *course_65;
-    IBOutlet UIButton  *course_66;
-    IBOutlet UIButton  *course_67;
-    IBOutlet UIButton  *course_68;
-    IBOutlet UIButton  *course_69;
-    IBOutlet UIButton  *course_70;
-    IBOutlet UIButton  *course_71;
-    IBOutlet UIButton  *course_72;
-    IBOutlet UIButton  *course_73;
-    IBOutlet UIButton  *course_74;
-    IBOutlet UIButton  *course_75;
-    IBOutlet UIButton  *course_76;
-    IBOutlet UIButton  *course_77;
-    IBOutlet UIButton  *course_78;
-    IBOutlet UIButton  *course_79;
-    IBOutlet UIButton  *course_80;
-    IBOutlet UIButton  *course_81;
-    IBOutlet UIButton  *course_82;
-    IBOutlet UIButton  *course_83;
-    IBOutlet UIButton  *course_84;
-    IBOutlet UIButton  *course_85;
-    IBOutlet UIButton  *course_86;
-    IBOutlet UIButton  *course_87;
-    IBOutlet UIButton  *course_88;
-    IBOutlet UIButton  *course_89;
-    IBOutlet UIButton  *course_90;
-    IBOutlet UIButton  *course_91;
-*/
 
 
     IBOutlet UILabel *points2_2012,*points3_2012,*points4_2012,*points5_2012,*points6_2012,*points7_2012,*points8_2012,*points9_2012;
@@ -160,101 +73,7 @@
     IBOutlet UILabel *points80_2010,*points81_2010,*points82_2010,*points83_2010,*points84_2010,*points85_2010,*points86_2010,*points87_2010,*points88_2010,*points89_2010;
     IBOutlet UILabel *points90_2010,*points91_2010,*points92_2010;
 
-    
-    
-    /*
-    IBOutlet UILabel *points2_2010;
-    IBOutlet UILabel *points3_2010;
-    IBOutlet UILabel *points4_2010;
-    IBOutlet UILabel *points5_2010;
-    IBOutlet UILabel *points6_2010;
-    IBOutlet UILabel *points7_2010;
-    IBOutlet UILabel *points8_2010;
-    IBOutlet UILabel *points9_2010;
-    IBOutlet UILabel *points10_2010;
-    IBOutlet UILabel *points11_2010;
-    IBOutlet UILabel *points12_2010;
-    IBOutlet UILabel *points13_2010;
-    IBOutlet UILabel *points14_2010;
-    IBOutlet UILabel *points15_2010;
-    IBOutlet UILabel *points16_2010;
-    IBOutlet UILabel *points17_2010;
-    IBOutlet UILabel *points18_2010;
-    IBOutlet UILabel *points19_2010;
-    IBOutlet UILabel *points20_2010;
-    IBOutlet UILabel *points21_2010;
-    IBOutlet UILabel *points22_2010;
-    IBOutlet UILabel *points23_2010;
-    IBOutlet UILabel *points24_2010;
-    IBOutlet UILabel *points25_2010;
-    IBOutlet UILabel *points26_2010;
-    IBOutlet UILabel *points27_2010;
-    IBOutlet UILabel *points28_2010;
-    IBOutlet UILabel *points29_2010;
-    IBOutlet UILabel *points30_2010;
-    IBOutlet UILabel *points31_2010;
-    IBOutlet UILabel *points32_2010;
-    IBOutlet UILabel *points33_2010;
-    IBOutlet UILabel *points34_2010;
-    IBOutlet UILabel *points35_2010;
-    IBOutlet UILabel *points36_2010;
-    IBOutlet UILabel *points37_2010;
-    IBOutlet UILabel *points38_2010;
-    IBOutlet UILabel *points39_2010;
-    IBOutlet UILabel *points40_2010;
-    IBOutlet UILabel *points41_2010;
-    IBOutlet UILabel *points42_2010;
-    IBOutlet UILabel *points43_2010;
-    IBOutlet UILabel *points44_2010;
-    IBOutlet UILabel *points45_2010;
-    IBOutlet UILabel *points46_2010;
-    IBOutlet UILabel *points47_2010;
-    IBOutlet UILabel *points48_2010;
-    IBOutlet UILabel *points49_2010;
-    IBOutlet UILabel *points50_2010;
-    IBOutlet UILabel *points51_2010;
-    IBOutlet UILabel *points52_2010;
-    IBOutlet UILabel *points53_2010;
-    IBOutlet UILabel *points54_2010;
-    IBOutlet UILabel *points55_2010;
-    IBOutlet UILabel *points56_2010;
-    IBOutlet UILabel *points57_2010;
-    IBOutlet UILabel *points58_2010;
-    IBOutlet UILabel *points59_2010;
-    IBOutlet UILabel *points60_2010;
-    IBOutlet UILabel *points61_2010;
-    IBOutlet UILabel *points62_2010;
-    IBOutlet UILabel *points63_2010;
-    IBOutlet UILabel *points64_2010;
-    IBOutlet UILabel *points65_2010;
-    IBOutlet UILabel *points66_2010;
-    IBOutlet UILabel *points67_2010;
-    IBOutlet UILabel *points68_2010;
-    IBOutlet UILabel *points69_2010;
-    IBOutlet UILabel *points70_2010;
-    IBOutlet UILabel *points71_2010;
-    IBOutlet UILabel *points72_2010;
-    IBOutlet UILabel *points73_2010;
-    IBOutlet UILabel *points74_2010;
-    IBOutlet UILabel *points75_2010;
-    IBOutlet UILabel *points76_2010;
-    IBOutlet UILabel *points77_2010;
-    IBOutlet UILabel *points78_2010;
-    IBOutlet UILabel *points79_2010;
-    IBOutlet UILabel *points80_2010;
-    IBOutlet UILabel *points81_2010;
-    IBOutlet UILabel *points82_2010;
-    IBOutlet UILabel *points83_2010;
-    IBOutlet UILabel *points84_2010;
-    IBOutlet UILabel *points85_2010;
-    IBOutlet UILabel *points86_2010;
-    IBOutlet UILabel *points87_2010;
-    IBOutlet UILabel *points88_2010;
-    IBOutlet UILabel *points89_2010;
-    IBOutlet UILabel *points90_2010;
-    IBOutlet UILabel *points91_2010;
-     */
-    
+
 }
 
 -(void)touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event;
