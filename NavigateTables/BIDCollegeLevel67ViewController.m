@@ -44,9 +44,7 @@ static NSString *CellIdentifier = @"Cell";
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"David Crowley.jpg"]];
-    
+
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CellIdentifier];
     
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		23276CA018ADEE0A0021D5A7 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 23276C9F18ADEE0A0021D5A7 /* libsqlite3.0.dylib */; };
+		233DF03C18AF17AD004A5CEC /* college_simtest_data2.sql in Resources */ = {isa = PBXBuildFile; fileRef = 233DF03B18AF17AD004A5CEC /* college_simtest_data2.sql */; };
+		233DF03E18AF2512004A5CEC /* CAO_appIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 233DF03D18AF2512004A5CEC /* CAO_appIcon.jpg */; };
 		2358303A171FB2B400647CB6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 23583039171FB2B400647CB6 /* libsqlite3.dylib */; };
 		2366F65A175C727500E17B04 /* BIDCollegeLevelDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2366F659175C727500E17B04 /* BIDCollegeLevelDetailViewController.m */; };
 		23C09E51171B68EF00EADB40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C09E50171B68EF00EADB40 /* UIKit.framework */; };
@@ -27,11 +29,15 @@
 		23CEDB03187CC2080005471D /* CollegeLevel67DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23CEDB02187CC2080005471D /* CollegeLevel67DetailView.xib */; };
 		23D2A3F818A7410200885CD0 /* David Crowley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23D2A3F718A7410200885CD0 /* David Crowley.jpg */; };
 		23E227B817FF5F4C0056F8C4 /* CollegeLevelDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23E227B717FF5F4B0056F8C4 /* CollegeLevelDetailView.xib */; };
+		23E8FD8B18AF299A00C26965 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23E8FD8A18AF299A00C26965 /* Images.xcassets */; };
+		23E8FD8D18AF2DA100C26965 /* caoReal_level8Data.sql in Resources */ = {isa = PBXBuildFile; fileRef = 23E8FD8C18AF2DA100C26965 /* caoReal_level8Data.sql */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23276C9F18ADEE0A0021D5A7 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		23276CA118ADF0EC0021D5A7 /* college_simtest_data.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = college_simtest_data.sql; sourceTree = "<group>"; };
+		233DF03B18AF17AD004A5CEC /* college_simtest_data2.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = college_simtest_data2.sql; sourceTree = "<group>"; };
+		233DF03D18AF2512004A5CEC /* CAO_appIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CAO_appIcon.jpg; sourceTree = "<group>"; };
+		233DF03F18AF2681004A5CEC /* CAO_appIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CAO_appIcon.png; sourceTree = "<group>"; };
 		23583039171FB2B400647CB6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		2366F658175C727500E17B04 /* BIDCollegeLevelDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDCollegeLevelDetailViewController.h; sourceTree = "<group>"; };
 		2366F659175C727500E17B04 /* BIDCollegeLevelDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDCollegeLevelDetailViewController.m; sourceTree = "<group>"; };
@@ -61,6 +67,9 @@
 		23CEDB02187CC2080005471D /* CollegeLevel67DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollegeLevel67DetailView.xib; sourceTree = "<group>"; };
 		23D2A3F718A7410200885CD0 /* David Crowley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "David Crowley.jpg"; path = "../../../../../../Downloads/David Crowley.jpg"; sourceTree = "<group>"; };
 		23E227B717FF5F4B0056F8C4 /* CollegeLevelDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollegeLevelDetailView.xib; sourceTree = "<group>"; };
+		23E8FD8918AF27EE00C26965 /* CAO_appIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CAO_appIcon.png; sourceTree = "<group>"; };
+		23E8FD8A18AF299A00C26965 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CAOPoints/Images.xcassets; sourceTree = "<group>"; };
+		23E8FD8C18AF2DA100C26965 /* caoReal_level8Data.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = caoReal_level8Data.sql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +91,9 @@
 		23C09E44171B68EF00EADB40 = {
 			isa = PBXGroup;
 			children = (
+				23E8FD8A18AF299A00C26965 /* Images.xcassets */,
+				23E8FD8918AF27EE00C26965 /* CAO_appIcon.png */,
+				233DF03F18AF2681004A5CEC /* CAO_appIcon.png */,
 				23C09E56171B68EF00EADB40 /* CAOpoints */,
 				23C09E4F171B68EF00EADB40 /* Frameworks */,
 				23C09E4E171B68EF00EADB40 /* Products */,
@@ -135,7 +147,9 @@
 		23C09E57171B68EF00EADB40 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				23276CA118ADF0EC0021D5A7 /* college_simtest_data.sql */,
+				23E8FD8C18AF2DA100C26965 /* caoReal_level8Data.sql */,
+				233DF03D18AF2512004A5CEC /* CAO_appIcon.jpg */,
+				233DF03B18AF17AD004A5CEC /* college_simtest_data2.sql */,
 				23D2A3F718A7410200885CD0 /* David Crowley.jpg */,
 				23C09E58171B68EF00EADB40 /* CAOPoints-Info.plist */,
 				23C09E59171B68EF00EADB40 /* InfoPlist.strings */,
@@ -207,10 +221,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				23C09E5B171B68EF00EADB40 /* InfoPlist.strings in Resources */,
+				23E8FD8D18AF2DA100C26965 /* caoReal_level8Data.sql in Resources */,
+				23E8FD8B18AF299A00C26965 /* Images.xcassets in Resources */,
 				23C09E63171B68EF00EADB40 /* Default.png in Resources */,
 				23C09E65171B68EF00EADB40 /* Default@2x.png in Resources */,
 				23C09E67171B68EF00EADB40 /* Default-568h@2x.png in Resources */,
 				23E227B817FF5F4C0056F8C4 /* CollegeLevelDetailView.xib in Resources */,
+				233DF03E18AF2512004A5CEC /* CAO_appIcon.jpg in Resources */,
+				233DF03C18AF17AD004A5CEC /* college_simtest_data2.sql in Resources */,
 				23D2A3F818A7410200885CD0 /* David Crowley.jpg in Resources */,
 				23CEDB03187CC2080005471D /* CollegeLevel67DetailView.xib in Resources */,
 			);
@@ -307,6 +325,8 @@
 		23C09E6B171B68EF00EADB40 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -322,6 +342,8 @@
 		23C09E6C171B68EF00EADB40 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
