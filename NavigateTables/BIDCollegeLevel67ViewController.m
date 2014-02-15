@@ -29,7 +29,7 @@ static NSString *CellIdentifier = @"Cell";
         // Custom initialization
         self.title = @"Level 6,7 Min. Points by Institution";
         
-        self.colleges = @[@"ATHLONE IT",@"CARLOW COLLEGE",@"IT TALLAGHT ",@"NATIONAL COLLEGE OF IRELAND",@"PORTOBELLO COLLEGE",@"TRINITY COLLEGE DUBLIN",@"DUNDALK IT",@"UNIVERSITY OF LIMERICK",@"IT CARLOW",@"CORK IT",@"COLLEGE OF COMPUTER TRAINING",@"GALWAY-MAYO IT",@"LETTERKENNY IT",@"DUBLIN BUSINESS SCHOOL",@"DUBLIN INSTITUTE OF TECHNOLOGY",@"NATIONAL COUNSELLING AND PSYCHOTHERAPY INSTITUTE",@"LIMERICK IT",@"IT SLIGO",@"ST ANGELA'S - SLIGO",@"DUN LAOGHAIRE IADT",@"GRAFTON COLLEGE of MANAGEMENT SCIENCES",@"GRIFFITH COLLEGE DUBLIN, CORK AND LIMERICK",@"INSTITUTE OF BUSINESS AND TECHNOLOGY  SWORDS",@"IT BLANCHARDSTOWN ",@"IT TRALEE",@"WATERFORD INSTITUTE OF TECHNOLOGY"];
+        self.colleges = @[@"ATHLONE IT",@"CARLOW COLLEGE",@"IT TALLAGHT ",@"NATIONAL COLLEGE OF IRELAND",@"PORTOBELLO COLLEGE",@"TRINITY COLLEGE DUBLIN",@"DUNDALK IT",@"UNIVERSITY OF LIMERICK",@"IT CARLOW",@"CORK IT",@"COLLEGE OF COMPUTER TRAINING",@"GALWAY-MAYO IT",@"LETTERKENNY IT",@"DUBLIN BUSINESS SCHOOL",@"DUBLIN INSTITUTE OF TECHNOLOGY",@"NATIONAL COUNSELLING AND PSYCHOTHERAPY INSTITUTE",@"LIMERICK IT",@"IT SLIGO ",@"ST ANGELAS - SLIGO",@"DUN LAOGHAIRE IADT",@"GRAFTON COLLEGE of MANAGEMENT SCIENCES",@"GRIFFITH COLLEGE DUBLIN, CORK AND LIMERICK",@"INSTITUTE OF BUSINESS AND TECHNOLOGY  SWORDS",@"IT BLANCHARDSTOWN ",@"IT TRALEE",@"WATERFORD INSTITUTE OF TECHNOLOGY"];
         
         /*reverse next two lines to retrieve original*/
         
@@ -44,6 +44,9 @@ static NSString *CellIdentifier = @"Cell";
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"David Crowley.jpg"]];
+    
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CellIdentifier];
     
 }
@@ -59,7 +62,7 @@ static NSString *CellIdentifier = @"Cell";
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    //cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+    cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     cell.textLabel.text = self.colleges[indexPath.row];
     
     return cell;
@@ -82,17 +85,21 @@ static NSString *CellIdentifier = @"Cell";
 }
 
 
-/*
+
 -(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
     self.detailController.title = @"Disclosure Button Pressed";
     NSString *selectedCollege = self.colleges[indexPath.row];
+    NSString *name=nil;
 
-    self.detailController.title = selectedCollege;
-    [self.navigationController pushViewController:self.detailController animated:YES];
     
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:name
+                                                    message: selectedCollege
+                                                   delegate:nil cancelButtonTitle:@"OK , good to know !"
+                                          otherButtonTitles:nil];
+    [alert show];
 }
-*/
+
 
 @end
 

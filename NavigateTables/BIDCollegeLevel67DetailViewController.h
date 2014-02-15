@@ -23,6 +23,9 @@
 
 @interface BIDCollegeLevel67DetailViewController : UIViewController{
     
+    
+    NSString *databaseName;
+    
     IBOutlet UIScrollView *scroller_1;
     
     

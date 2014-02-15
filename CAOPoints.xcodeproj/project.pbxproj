@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23276CA018ADEE0A0021D5A7 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 23276C9F18ADEE0A0021D5A7 /* libsqlite3.0.dylib */; };
 		2358303A171FB2B400647CB6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 23583039171FB2B400647CB6 /* libsqlite3.dylib */; };
-		23660237189CF972006DCC1A /* cao_db_RealLevel8Data_2.sql in Resources */ = {isa = PBXBuildFile; fileRef = 23660236189CF972006DCC1A /* cao_db_RealLevel8Data_2.sql */; };
 		2366F65A175C727500E17B04 /* BIDCollegeLevelDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2366F659175C727500E17B04 /* BIDCollegeLevelDetailViewController.m */; };
 		23C09E51171B68EF00EADB40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C09E50171B68EF00EADB40 /* UIKit.framework */; };
 		23C09E53171B68EF00EADB40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C09E52171B68EF00EADB40 /* Foundation.framework */; };
@@ -25,22 +25,24 @@
 		23CEDAFD187CBEAF0005471D /* BIDCollegeLevel67ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CEDAFB187CBEAF0005471D /* BIDCollegeLevel67ViewController.m */; };
 		23CEDB01187CC0150005471D /* BIDCollegeLevel67DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CEDB00187CC0150005471D /* BIDCollegeLevel67DetailViewController.m */; };
 		23CEDB03187CC2080005471D /* CollegeLevel67DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23CEDB02187CC2080005471D /* CollegeLevel67DetailView.xib */; };
+		23D2A3F818A7410200885CD0 /* David Crowley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23D2A3F718A7410200885CD0 /* David Crowley.jpg */; };
 		23E227B817FF5F4C0056F8C4 /* CollegeLevelDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23E227B717FF5F4B0056F8C4 /* CollegeLevelDetailView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23276C9F18ADEE0A0021D5A7 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		23276CA118ADF0EC0021D5A7 /* college_simtest_data.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = college_simtest_data.sql; sourceTree = "<group>"; };
 		23583039171FB2B400647CB6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		23660236189CF972006DCC1A /* cao_db_RealLevel8Data_2.sql */ = {isa = PBXFileReference; lastKnownFileType = file; name = cao_db_RealLevel8Data_2.sql; path = ../../../../../../CAO_App/cao_db_RealLevel8Data_2.sql; sourceTree = "<group>"; };
 		2366F658175C727500E17B04 /* BIDCollegeLevelDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDCollegeLevelDetailViewController.h; sourceTree = "<group>"; };
 		2366F659175C727500E17B04 /* BIDCollegeLevelDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDCollegeLevelDetailViewController.m; sourceTree = "<group>"; };
-		23C09E4D171B68EF00EADB40 /* NavigateTables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigateTables.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23C09E4D171B68EF00EADB40 /* CAOPoints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAOPoints.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C09E50171B68EF00EADB40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		23C09E52171B68EF00EADB40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		23C09E54171B68EF00EADB40 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		23C09E58171B68EF00EADB40 /* NavigateTables-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NavigateTables-Info.plist"; sourceTree = "<group>"; };
+		23C09E58171B68EF00EADB40 /* CAOPoints-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CAOPoints-Info.plist"; sourceTree = "<group>"; };
 		23C09E5A171B68EF00EADB40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		23C09E5C171B68EF00EADB40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		23C09E5E171B68EF00EADB40 /* NavigateTables-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NavigateTables-Prefix.pch"; sourceTree = "<group>"; };
+		23C09E5E171B68EF00EADB40 /* CAOPoints-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAOPoints-Prefix.pch"; sourceTree = "<group>"; };
 		23C09E5F171B68EF00EADB40 /* BIDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDAppDelegate.h; sourceTree = "<group>"; };
 		23C09E60171B68EF00EADB40 /* BIDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDAppDelegate.m; sourceTree = "<group>"; };
 		23C09E62171B68EF00EADB40 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 		23CEDAFF187CC0150005471D /* BIDCollegeLevel67DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDCollegeLevel67DetailViewController.h; sourceTree = "<group>"; };
 		23CEDB00187CC0150005471D /* BIDCollegeLevel67DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDCollegeLevel67DetailViewController.m; sourceTree = "<group>"; };
 		23CEDB02187CC2080005471D /* CollegeLevel67DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollegeLevel67DetailView.xib; sourceTree = "<group>"; };
+		23D2A3F718A7410200885CD0 /* David Crowley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "David Crowley.jpg"; path = "../../../../../../Downloads/David Crowley.jpg"; sourceTree = "<group>"; };
 		23E227B717FF5F4B0056F8C4 /* CollegeLevelDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollegeLevelDetailView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2358303A171FB2B400647CB6 /* libsqlite3.dylib in Frameworks */,
+				23276CA018ADEE0A0021D5A7 /* libsqlite3.0.dylib in Frameworks */,
 				23C09E51171B68EF00EADB40 /* UIKit.framework in Frameworks */,
 				23C09E53171B68EF00EADB40 /* Foundation.framework in Frameworks */,
 				23C09E55171B68EF00EADB40 /* CoreGraphics.framework in Frameworks */,
@@ -78,7 +82,7 @@
 		23C09E44171B68EF00EADB40 = {
 			isa = PBXGroup;
 			children = (
-				23C09E56171B68EF00EADB40 /* NavigateTables */,
+				23C09E56171B68EF00EADB40 /* CAOpoints */,
 				23C09E4F171B68EF00EADB40 /* Frameworks */,
 				23C09E4E171B68EF00EADB40 /* Products */,
 			);
@@ -87,7 +91,7 @@
 		23C09E4E171B68EF00EADB40 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				23C09E4D171B68EF00EADB40 /* NavigateTables.app */,
+				23C09E4D171B68EF00EADB40 /* CAOPoints.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +99,7 @@
 		23C09E4F171B68EF00EADB40 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				23276C9F18ADEE0A0021D5A7 /* libsqlite3.0.dylib */,
 				23C09E50171B68EF00EADB40 /* UIKit.framework */,
 				23C09E52171B68EF00EADB40 /* Foundation.framework */,
 				23C09E54171B68EF00EADB40 /* CoreGraphics.framework */,
@@ -102,7 +107,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		23C09E56171B68EF00EADB40 /* NavigateTables */ = {
+		23C09E56171B68EF00EADB40 /* CAOpoints */ = {
 			isa = PBXGroup;
 			children = (
 				23C09E5F171B68EF00EADB40 /* BIDAppDelegate.h */,
@@ -123,17 +128,19 @@
 				23CEDB02187CC2080005471D /* CollegeLevel67DetailView.xib */,
 				23C09E57171B68EF00EADB40 /* Supporting Files */,
 			);
+			name = CAOpoints;
 			path = NavigateTables;
 			sourceTree = "<group>";
 		};
 		23C09E57171B68EF00EADB40 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				23660236189CF972006DCC1A /* cao_db_RealLevel8Data_2.sql */,
-				23C09E58171B68EF00EADB40 /* NavigateTables-Info.plist */,
+				23276CA118ADF0EC0021D5A7 /* college_simtest_data.sql */,
+				23D2A3F718A7410200885CD0 /* David Crowley.jpg */,
+				23C09E58171B68EF00EADB40 /* CAOPoints-Info.plist */,
 				23C09E59171B68EF00EADB40 /* InfoPlist.strings */,
 				23C09E5C171B68EF00EADB40 /* main.m */,
-				23C09E5E171B68EF00EADB40 /* NavigateTables-Prefix.pch */,
+				23C09E5E171B68EF00EADB40 /* CAOPoints-Prefix.pch */,
 				23C09E62171B68EF00EADB40 /* Default.png */,
 				23C09E64171B68EF00EADB40 /* Default@2x.png */,
 				23C09E66171B68EF00EADB40 /* Default-568h@2x.png */,
@@ -145,9 +152,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		23C09E4C171B68EF00EADB40 /* NavigateTables */ = {
+		23C09E4C171B68EF00EADB40 /* CAOPoints */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 23C09E6A171B68EF00EADB40 /* Build configuration list for PBXNativeTarget "NavigateTables" */;
+			buildConfigurationList = 23C09E6A171B68EF00EADB40 /* Build configuration list for PBXNativeTarget "CAOPoints" */;
 			buildPhases = (
 				23C09E49171B68EF00EADB40 /* Sources */,
 				23C09E4A171B68EF00EADB40 /* Frameworks */,
@@ -157,9 +164,9 @@
 			);
 			dependencies = (
 			);
-			name = NavigateTables;
+			name = CAOPoints;
 			productName = NavigateTables;
-			productReference = 23C09E4D171B68EF00EADB40 /* NavigateTables.app */;
+			productReference = 23C09E4D171B68EF00EADB40 /* CAOPoints.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -171,8 +178,13 @@
 				CLASSPREFIX = BID;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = EventHorizon;
+				TargetAttributes = {
+					23C09E4C171B68EF00EADB40 = {
+						DevelopmentTeam = 6325EG346L;
+					};
+				};
 			};
-			buildConfigurationList = 23C09E48171B68EF00EADB40 /* Build configuration list for PBXProject "NavigateTables" */;
+			buildConfigurationList = 23C09E48171B68EF00EADB40 /* Build configuration list for PBXProject "CAOPoints" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -184,7 +196,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				23C09E4C171B68EF00EADB40 /* NavigateTables */,
+				23C09E4C171B68EF00EADB40 /* CAOPoints */,
 			);
 		};
 /* End PBXProject section */
@@ -199,8 +211,8 @@
 				23C09E65171B68EF00EADB40 /* Default@2x.png in Resources */,
 				23C09E67171B68EF00EADB40 /* Default-568h@2x.png in Resources */,
 				23E227B817FF5F4C0056F8C4 /* CollegeLevelDetailView.xib in Resources */,
+				23D2A3F818A7410200885CD0 /* David Crowley.jpg in Resources */,
 				23CEDB03187CC2080005471D /* CollegeLevel67DetailView.xib in Resources */,
-				23660237189CF972006DCC1A /* cao_db_RealLevel8Data_2.sql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,10 +308,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NavigateTables/NavigateTables-Prefix.pch";
-				INFOPLIST_FILE = "NavigateTables/NavigateTables-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "NavigateTables/CAOPoints-Prefix.pch";
+				INFOPLIST_FILE = "NavigateTables/CAOPoints-Info.plist";
+				PRODUCT_NAME = CAOPoints;
+				PROVISIONING_PROFILE = "6C4A0291-8674-457A-A104-C7511FE30BB6";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -308,10 +323,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NavigateTables/NavigateTables-Prefix.pch";
-				INFOPLIST_FILE = "NavigateTables/NavigateTables-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "NavigateTables/CAOPoints-Prefix.pch";
+				INFOPLIST_FILE = "NavigateTables/CAOPoints-Info.plist";
+				PRODUCT_NAME = CAOPoints;
+				PROVISIONING_PROFILE = "6C4A0291-8674-457A-A104-C7511FE30BB6";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -319,7 +337,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		23C09E48171B68EF00EADB40 /* Build configuration list for PBXProject "NavigateTables" */ = {
+		23C09E48171B68EF00EADB40 /* Build configuration list for PBXProject "CAOPoints" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				23C09E68171B68EF00EADB40 /* Debug */,
@@ -328,7 +346,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		23C09E6A171B68EF00EADB40 /* Build configuration list for PBXNativeTarget "NavigateTables" */ = {
+		23C09E6A171B68EF00EADB40 /* Build configuration list for PBXNativeTarget "CAOPoints" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				23C09E6B171B68EF00EADB40 /* Debug */,
