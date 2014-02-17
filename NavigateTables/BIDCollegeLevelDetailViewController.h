@@ -76,7 +76,7 @@
 
 }
 
--(void)touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event;
+//-(void)touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event;
 
 -(IBAction)namePressed:(UIButton *)sender;
 

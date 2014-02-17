@@ -22,15 +22,13 @@ static NSString *CellIdentifier = @"Cell";
         // Custom initialization
         self.title = @"Level 8 Min. Points by Institution";
         
-        NSAttributedString *text = @"Hello";
-        
         self.colleges = @[@"Athlone IT",@"Carlow College",@"IT Carlow ",@"Cork IT",@"Royal college of Surgeons",@"University College Dublin",@"Dundalk IT",@"University College Cork",@"All Hallows",@"American College",@"Church of Ireland College",@"Marino Institute of Technology",@"Dublin Business School",@"IT Blanchardstown",@"Galway - Mayo IT",@"NUI - Galway",@"St Patricks - Thurles",@"Dublin City University",@"Griffith College Dublin, Cork and Limerick",@"Institute of Business and Technology Swords",@"Mater Dei",@"National College of Art and Design",@"University of Limerick",@"Limerick IT",@"Dublin Institute of Technology",@"Dun Laoghaire IADT",@"Independent Colleges Dublin ",@"ICD Business School",@"National College of Ireland",@"Letterkenny IT",@"Marino Institute of Technology",@"National Counselling and Psychotherapy Institute",@"ST Patricks (Pontifical)-Maynooth",@"NUI - Maynooth",@"Shannon College of Hotel Mgt",@"IT Tallaght",@"St Patricks Drumcondra",@"Trinity College Dublin",@"St Angelas - Sligo",@"IT Sligo",@"IT Tralee",@"Waterford Institute of Technology"];
         
         
         /*reverse next two lines to retrieve original*/
 
         
-        self.detailController = [[BIDCollegeLevelDetailViewController alloc] initWithNibName:@"CollegeLevelDetailView" bundle:nil];
+        self.detailController = (BIDCollegeLevelViewController *)[[BIDCollegeLevelDetailViewController alloc] initWithNibName:@"CollegeLevelDetailView" bundle:nil];
         
     }
     

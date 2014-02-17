@@ -183,23 +183,14 @@ NSArray *pts_2010Array;
     
     
     NSString *field1Str=nil;
-    NSString *field2Str=nil;
     NSString *field3Str=nil;
-    NSString *field4Str=nil;
     NSString *field5Str=nil;
     NSString *field6Str=nil;
     NSString *field7Str=nil;
-    NSString *field8Str=nil;
-    NSString *field9Str=nil;
-    
-    NSString *truncatedField2Str=nil;
-    NSString *truncatedField3Str=nil;
-    NSString *truncatedField4Str=nil;
+
     NSString *truncatedField5Str=nil;
     NSString *truncatedField6Str=nil;
     NSString *truncatedField7Str=nil;
-    NSString *truncatedField8Str=nil;
-    NSString *truncatedField9Str=nil;
     
     
     if(sqlite3_open_v2([[self filePath] UTF8String],&(db),1,NULL) == SQLITE_OK) {
@@ -215,37 +206,19 @@ NSArray *pts_2010Array;
                 field1Str = [[NSString alloc] initWithUTF8String : field1];
                 
                 unique_code=field1Str;
-                
-                char *field2 = (char *) sqlite3_column_text(statement_1,1);
-                field2Str = [[NSString alloc] initWithUTF8String : field2];
-                
+
                 char *field3 = (char *) sqlite3_column_text(statement_1,2);
                 field3Str = [[NSString alloc] initWithUTF8String : field3];
-                
-                
-                char *field4 = (char *) sqlite3_column_text(statement_1,3);
-                field4Str = [[NSString alloc] initWithUTF8String : field4];
-                
                 
                 char *field5 = (char *) sqlite3_column_text(statement_1,4);
                 field5Str = [[NSString alloc] initWithUTF8String : field5];
                 
-                
                 char *field6 = (char *) sqlite3_column_text(statement_1,5);
                 field6Str = [[NSString alloc] initWithUTF8String : field6];
                 
-                
                 char *field7 = (char *) sqlite3_column_text(statement_1,6);
                 field7Str = [[NSString alloc] initWithUTF8String : field7];
-                
-                char *field8 = (char *) sqlite3_column_text(statement_1,7);
-                field8Str = [[NSString alloc] initWithUTF8String : field8];
-                
-                char *field9 = (char *) sqlite3_column_text(statement_1,8);
-                field9Str = [[NSString alloc] initWithUTF8String : field9];
-                
-                truncatedField2Str = [field2Str substringToIndex:[field2Str length]-2];
-                
+
                 NSString *newStr=nil;
                 
                 if([field5Str isEqualToString:@""])
@@ -325,19 +298,16 @@ NSArray *pts_2010Array;
 
 -(IBAction)namePressed:(UIButton *)sender
 {
-    NSString *name1 = (sender.titleLabel).text;
     NSString *name = (NSString *)(sender.assign);
     
     UIAlertView *alertMsg=nil;
     NSString *full_course_name=nil;
-    NSString *portfolio_exist=nil;
     NSString *quota_reached_exist=nil;
     NSString *music_test_interview=nil;
     NSString *Interview=nil;
     NSString *testInterviewPortfolio=nil;
     NSString *AQA=nil;
     NSString *VacantPlaces=nil;
-    NSString *Project_portfolio=nil;
     
     full_course_name   =[self getAllRowsFromTableNamed : @"CAO_collegeLevelGenData" sortBy : name];
     quota_reached_exist=[self getFirstExtraInfoFromTableNamed : @"CAO_collegeLevelGenData" sortBy : name];
@@ -374,13 +344,6 @@ NSArray *pts_2010Array;
     NSString *extraStuff_13 = [extraStuff_12 stringByAppendingString:VacantPlaces ];
     NSString *extraStuff_14 = [ extraStuff_13 stringByAppendingString:  @"\n"];
     
-    
-    NSString *boldFontName = [[UIFont boldSystemFontOfSize:15.0] fontName];
-    NSString *yourString = extraStuff_14;
-    NSRange boldedRange = NSMakeRange(22, 4);
-    
-    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:yourString];
-    
     //assign a larger font to main msg. body
     [extraStuff_14 sizeWithFont:[UIFont boldSystemFontOfSize:15.0]];
     
@@ -414,10 +377,11 @@ NSArray *pts_2010Array;
     
     if(success)
         return dbPath;
-
-    else
-        NSLog(@"error with accessing database file");
     
+    //return a nil string as error
+    dbPath=nil;
+    
+    return dbPath;
 }
 
 
@@ -502,21 +466,9 @@ NSArray *pts_2010Array;
     {
         while(sqlite3_step(statement_1) == SQLITE_ROW)
         {
-            char *field1 = (char *) sqlite3_column_text(statement_1,0);
-            NSString *field1Str = [[NSString alloc] initWithUTF8String : field1];
-            
             char *field2 = (char *) sqlite3_column_text(statement_1,1);
-            NSString *field2Str = [[NSString alloc] initWithUTF8String : field2];
-            
-            
-            char *field3 = (char *) sqlite3_column_text(statement_1,2);
-            NSString *truncatedtruncatedField3Str = [[NSString alloc] initWithUTF8String : field3];
-            
-            char *field4 = (char *) sqlite3_column_text(statement_1,3);
-            NSString *field4Str = [[NSString alloc] initWithUTF8String : field4];
-            
+        
             answer = [[NSString alloc] initWithUTF8String : field2];
-            
             [answer sizeWithFont:[UIFont boldSystemFontOfSize:15.0]];
         }
         
@@ -543,12 +495,8 @@ NSArray *pts_2010Array;
     {
         while(sqlite3_step(statement_1) == SQLITE_ROW)
         {
-            
             char *field8 = (char *) sqlite3_column_text(statement_1,7);
-            NSString *field8Str = [[NSString alloc] initWithUTF8String : field8];
-            
             sol = [[NSString alloc] initWithUTF8String : field8];
-            
         }
         
         //---delete the compiled statement from memory---
@@ -573,8 +521,6 @@ NSArray *pts_2010Array;
         while(sqlite3_step(statement_1) == SQLITE_ROW)
         {
             char *field9 = (char *) sqlite3_column_text(statement_1,8);
-            NSString *field9Str = [[NSString alloc] initWithUTF8String : field9];
-            
             sol1 = [[NSString alloc] initWithUTF8String : field9];
         }
         
@@ -600,8 +546,6 @@ NSArray *pts_2010Array;
         while(sqlite3_step(statement_1) == SQLITE_ROW)
         {
             char *field10 = (char *) sqlite3_column_text(statement_1,9);
-            NSString *field10Str = [[NSString alloc] initWithUTF8String : field10];
-            
             sol2 = [[NSString alloc] initWithUTF8String : field10];
         }
         
@@ -628,8 +572,6 @@ NSArray *pts_2010Array;
         {
             
             char *field11 = (char *) sqlite3_column_text(statement_1,10);
-            NSString *field11Str = [[NSString alloc] initWithUTF8String : field11];
-            
             sol3 = [[NSString alloc] initWithUTF8String : field11];
             
         }
@@ -655,12 +597,8 @@ NSArray *pts_2010Array;
     {
         while(sqlite3_step(statement_1) == SQLITE_ROW)
         {
-            
             char *field12 = (char *) sqlite3_column_text(statement_1,11);
-            NSString *field12Str = [[NSString alloc] initWithUTF8String : field12];
-            
             sol4 = [[NSString alloc] initWithUTF8String : field12];
-            
         }
         
         //---delete the compiled statement from memory---
@@ -684,12 +622,8 @@ NSArray *pts_2010Array;
     {
         while(sqlite3_step(statement_1) == SQLITE_ROW)
         {
-            
             char *field13 = (char *) sqlite3_column_text(statement_1,12);
-            NSString *field13Str = [[NSString alloc] initWithUTF8String : field13];
-            
             sol5 = [[NSString alloc] initWithUTF8String : field13];
-            
         }
         
         //---delete the compiled statement from memory---
