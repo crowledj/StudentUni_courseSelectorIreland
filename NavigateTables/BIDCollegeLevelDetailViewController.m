@@ -308,7 +308,7 @@ NSArray *pts_2010Array;
     NSString *testInterviewPortfolio=nil;
     NSString *AQA=nil;
     NSString *VacantPlaces=nil;
-    
+
     full_course_name   =[self getAllRowsFromTableNamed : @"CAO_collegeLevelGenData" sortBy : name];
     quota_reached_exist=[self getFirstExtraInfoFromTableNamed : @"CAO_collegeLevelGenData" sortBy : name];
     music_test_interview=[self getSecondExtraInfoFromTableNamed : @"CAO_collegeLevelGenData" sortBy : name];
@@ -317,7 +317,7 @@ NSArray *pts_2010Array;
     AQA=[self getFifthExtraInfoFromTableNamed : @"CAO_collegeLevelGenData" sortBy : name];
     VacantPlaces=[self getSixthExtraInfoFromTableNamed : @"CAO_collegeLevelGenData" sortBy : name];
     
-    
+
     NSString *extraStuff_2 = @"\n Unique course code : ";
     NSString *extraStuff_3=nil;
     
@@ -343,9 +343,6 @@ NSArray *pts_2010Array;
     NSString *extraStuff_12 = [ extraStuff_11 stringByAppendingString:  @"\n"];
     NSString *extraStuff_13 = [extraStuff_12 stringByAppendingString:VacantPlaces ];
     NSString *extraStuff_14 = [ extraStuff_13 stringByAppendingString:  @"\n"];
-    
-    //assign a larger font to main msg. body
-    [extraStuff_14 sizeWithFont:[UIFont boldSystemFontOfSize:15.0]];
     
     alertMsg = [[UIAlertView alloc] initWithTitle:full_course_name
                 
@@ -398,62 +395,6 @@ NSArray *pts_2010Array;
 
 
 
--(void) createTableOneNamed:(NSString *) tableNameOne withField1:(NSString *)   field1  withField2:(NSString *)   field2
-                 withField3:(NSString *)  field3      withField4:(NSString *)   field4  withField5:(NSString *)   field5
-                 withField6:(NSString *)  field6      withField7:(NSString *)   field7  withField8:(NSString *)   field8
-                 withField9:(NSString *)  field9      withField10:(NSString *)  field10 withField11:(NSString *)  field11
-                withField12:(NSString *) field12     withField13:(NSString *)  field13
-{
-    
-    char *err;
-    NSString *sql_1 = [NSString stringWithFormat:
-                       @"CREATE TABLE IF NOT EXISTS '%@' ('%@' TEXT PRIMARY KEY,'%@' REAL,'%@' REAL,'%@' REAL,'%@' REAL,'%@' REAL,'%@' REAL,'%@' REAL,'%@' REAL,'%@' REAL,'%@' REAL,'%@' REAL,'%@' REAL);"
-                       ,tableNameOne,field1, field2,field3,field4, field5,field6,field7,field8,field9,field10,field11,field12,field13];
-    
-    
-    if(sqlite3_exec(db,[sql_1 UTF8String],NULL,NULL, &err) != SQLITE_OK)
-    {
-        sqlite3_close(db);
-        NSAssert(0,@"Tabled failed to create.");
-    }
-    
-}
-
-
-
-
--(void)insertRecordIntoTableNamed: (NSString *) tableName
-                       withField1: (NSString *) field1 field1Value: (NSString *) field1Value andField2: (NSString *) field2
-                      field2Value: (NSString *) field2Value  andField3: (NSString *) field3
-                      field3Value: (NSString *) field3Value  andField4: (NSString *) field4
-                      field4Value: (NSString *) field4Value  andField5: (NSString *) field5
-                      field5Value: (NSString *) field5Value  andField6: (NSString *) field6
-                      field6Value: (NSString *) field6Value  andField7: (NSString *) field7
-                      field7Value: (NSString *) field7Value  andField8: (NSString *) field8
-                      field8Value: (NSString *) field8Value  andField9: (NSString *) field9
-                      field9Value: (NSString *) field9Value  andField10: (NSString *) field10
-                     field10Value: (NSString *) field10Value  andField11: (NSString *) field11
-                     field11Value: (NSString *) field11Value  andField12: (NSString *) field12
-                     field12Value: (NSString *) field12Value  andField13: (NSString *) field13
-                     field13Value: (NSString *) field13Value
-{
-    NSString *sql_1 =[NSString stringWithFormat:
-                      @"INSERT OR REPLACE INTO '%@' ('%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@') VALUES ('%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@','%@');",
-                      tableName,field1,field2,field3,field4,field5,field6,field7,field8,field9,field10,field11,field12,field13,field1Value,field2Value,field3Value,field4Value,field5Value,field6Value,field7Value,field8Value,field9Value,field10Value,field11Value,field12Value,field13Value];
-    
-    char *err;
-    
-    if(sqlite3_exec(db,[sql_1 UTF8String],NULL,NULL, &err) != SQLITE_OK)
-    {
-        sqlite3_close(db);
-        NSAssert(0,@"Error updating table.");
-    }
-    
-}
-
-
-
-
 -(NSString*)getAllRowsFromTableNamed :(NSString *) tableName sortBy: (NSString *) column
 {
     //retrieve rows
@@ -464,12 +405,13 @@ NSArray *pts_2010Array;
     
     if(sqlite3_prepare(db, [qsql_1 UTF8String],-1, &statement_1,nil) == SQLITE_OK )
     {
+        
         while(sqlite3_step(statement_1) == SQLITE_ROW)
         {
+            
             char *field2 = (char *) sqlite3_column_text(statement_1,1);
-        
             answer = [[NSString alloc] initWithUTF8String : field2];
-            [answer sizeWithFont:[UIFont boldSystemFontOfSize:15.0]];
+
         }
         
         //---delete the compiled statement from memory---
